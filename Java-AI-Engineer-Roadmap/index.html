@@ -1,0 +1,2457 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Java工程师和AI工程师学习路线图、技术教程、AI资讯汇总">
+      
+      
+        <meta name="author" content="sea-t">
+      
+      
+        <link rel="canonical" href="https://sea-t.github.io/ps_wiki/Java-AI-Engineer-Roadmap/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../AI-News/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Java & AI 工程师学习路线图 - 学习博客 - Java & AI 工程师成长之路</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#java-ai" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="学习博客 - Java &amp; AI 工程师成长之路" class="md-header__button md-logo" aria-label="学习博客 - Java & AI 工程师成长之路" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            学习博客 - Java & AI 工程师成长之路
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Java & AI 工程师学习路线图
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到暗黑模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗黑模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到明亮模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到明亮模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sea-t/ps_wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sea-t/ps_wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  学习路线
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../AI-News/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  AI 资讯
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="学习博客 - Java &amp; AI 工程师成长之路" class="md-nav__button md-logo" aria-label="学习博客 - Java & AI 工程师成长之路" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    学习博客 - Java & AI 工程师成长之路
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sea-t/ps_wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sea-t/ps_wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    学习路线
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            学习路线
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Java & AI 工程师学习路线图
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Java & AI 工程师学习路线图
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、Java工程师技能树与学习路线
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、Java工程师技能树与学习路线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 学习阶段规划
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 核心技能树
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 进阶技术栈
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pythonai" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、Python与AI工程师技能树与学习路线
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、Python与AI工程师技能树与学习路线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Python学习路线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 AI工程师学习路线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 核心技能树
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 深度学习框架
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、Linux运维基础知识
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、Linux运维基础知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 必备技能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 常用命令
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、DevOps与云原生技术
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、DevOps与云原生技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 容器化技术
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 CI/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 监控与日志
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、学习资源推荐
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、学习资源推荐">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Java学习资源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Python学习资源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 AI学习资源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Linux学习资源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 DevOps学习资源
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、学习建议
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、学习建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 学习方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 职业发展路径
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 面试准备
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      七、总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      附录：常用技术网站
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="附录：常用技术网站">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      综合学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Java技术
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI技术
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      云服务
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../AI-News/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    AI 资讯
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AI 资讯
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-News/2025-AI-Trends-And-News/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025年AI最新资讯与趋势
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="java-ai">Java &amp; AI 工程师技能学习路线图<a class="headerlink" href="#java-ai" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>最后更新：2025年</p>
+<p>本文档整理了Java工程师和AI工程师应该具备的核心技能、学习路线以及Linux运维基础知识，帮助你系统化地规划学习路径。</p>
+</blockquote>
+<hr />
+<h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#一java工程师技能树与学习路线">一、Java工程师技能树与学习路线</a></li>
+<li><a href="#11-学习阶段规划">1.1 学习阶段规划</a></li>
+<li><a href="#12-核心技能树">1.2 核心技能树</a></li>
+<li><a href="#13-进阶技术栈">1.3 进阶技术栈</a></li>
+<li><a href="#二python与ai工程师技能树与学习路线">二、Python与AI工程师技能树与学习路线</a></li>
+<li><a href="#21-python学习路线">2.1 Python学习路线</a></li>
+<li><a href="#22-ai工程师学习路线">2.2 AI工程师学习路线</a></li>
+<li><a href="#23-核心技能树">2.3 核心技能树</a></li>
+<li><a href="#24-深度学习框架">2.4 深度学习框架</a></li>
+<li><a href="#三linux运维基础知识">三、Linux运维基础知识</a></li>
+<li><a href="#31-必备技能">3.1 必备技能</a></li>
+<li><a href="#32-常用命令">3.2 常用命令</a></li>
+<li><a href="#四devops与云原生技术">四、DevOps与云原生技术</a></li>
+<li><a href="#五学习资源推荐">五、学习资源推荐</a></li>
+</ul>
+<hr />
+<h2 id="java">一、Java工程师技能树与学习路线<a class="headerlink" href="#java" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 学习阶段规划<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<h4 id="java4-8">阶段一：Java基础（4-8周）<a class="headerlink" href="#java4-8" title="Permanent link">&para;</a></h4>
+<p><strong>核心内容：</strong>
+- Java语言基础
+  - 数据类型、运算符、流程控制
+  - 面向对象编程（OOP）：封装、继承、多态
+  - 异常处理机制
+  - 集合框架（List、Set、Map）
+  - 泛型、注解、反射
+  - I/O流与NIO
+  - 多线程与并发基础</p>
+<p><strong>开发环境：</strong>
+- JDK 21+ 安装与配置
+- IntelliJ IDEA 2025 开发环境搭建
+- Maven/Gradle 项目管理工具</p>
+<p><strong>学习目标：</strong>
+- 掌握Java语法和面向对象编程思想
+- 能够独立编写基础Java程序
+- 理解Java集合框架和常用API</p>
+<hr />
+<h4 id="java6-10">阶段二：Java进阶（6-10周）<a class="headerlink" href="#java6-10" title="Permanent link">&para;</a></h4>
+<p><strong>核心内容：</strong>
+- Java高级特性
+  - Lambda表达式与Stream API
+  - Optional类使用
+  - 函数式编程
+  - Java 21新特性：
+    - 虚拟线程（Virtual Threads）
+    - 密封类（Sealed Classes）
+    - 模式匹配
+    - 记录类（Record）</p>
+<ul>
+<li>JVM深入理解</li>
+<li>JVM内存模型</li>
+<li>垃圾回收机制（GC）</li>
+<li>类加载机制</li>
+<li>
+<p>JVM性能调优</p>
+</li>
+<li>
+<p>并发编程</p>
+</li>
+<li>线程安全与同步</li>
+<li>Lock与Condition</li>
+<li>并发工具类（CountDownLatch、CyclicBarrier等）</li>
+<li>线程池原理与应用</li>
+<li>CompletableFuture异步编程</li>
+</ul>
+<p><strong>学习目标：</strong>
+- 深入理解JVM运行原理
+- 掌握Java并发编程
+- 能够进行性能分析和优化</p>
+<hr />
+<h4 id="2-3">阶段三：数据库与持久层（2-3周）<a class="headerlink" href="#2-3" title="Permanent link">&para;</a></h4>
+<p><strong>核心内容：</strong>
+- 关系型数据库
+  - MySQL基础与高级查询
+  - 索引原理与优化
+  - 事务与锁机制
+  - SQL性能优化</p>
+<ul>
+<li>持久层框架</li>
+<li>JDBC核心API</li>
+<li>MyBatis框架</li>
+<li>Spring Data JPA</li>
+<li>
+<p>Hibernate 6</p>
+</li>
+<li>
+<p>NoSQL数据库</p>
+</li>
+<li>Redis缓存技术</li>
+<li>MongoDB文档数据库</li>
+<li>Elasticsearch搜索引擎</li>
+</ul>
+<p><strong>学习目标：</strong>
+- 熟练使用MySQL数据库
+- 掌握主流持久层框架
+- 理解缓存和NoSQL应用场景</p>
+<hr />
+<h4 id="8-12">阶段四：企业级框架（8-12周）<a class="headerlink" href="#8-12" title="Permanent link">&para;</a></h4>
+<p><strong>核心内容：</strong>
+- Spring生态系统
+  - Spring Core（IoC、AOP）
+  - Spring Boot 3.x
+    - 自动配置原理
+    - Starter依赖管理
+    - 配置文件管理
+    - Actuator监控
+  - Spring MVC
+    - RESTful API设计
+    - 请求处理流程
+    - 数据验证
+  - Spring Security 6.x
+    - 认证与授权
+    - JWT Token
+    - OAuth 2.0</p>
+<ul>
+<li>响应式编程</li>
+<li>Spring WebFlux</li>
+<li>Reactor框架</li>
+<li>响应式数据库访问</li>
+</ul>
+<p><strong>学习目标：</strong>
+- 掌握Spring Boot快速开发
+- 能够构建安全的REST API
+- 理解响应式编程模型</p>
+<hr />
+<h3 id="12">1.2 核心技能树<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Java工程师技能树
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── 编程语言
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── Java 21核心特性
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── 设计模式（23种）
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   └── 数据结构与算法
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── 数据库技术
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ├── MySQL（主从复制、分库分表）
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   ├── Redis（缓存策略、集群）
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   ├── MongoDB
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   └── Elasticsearch
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>├── 框架技术
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│   ├── Spring Framework
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│   ├── Spring Boot 3.x
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│   ├── Spring Cloud 2025
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│   ├── MyBatis/JPA
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│   └── Spring Security
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>├── 中间件
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│   ├── 消息队列（RabbitMQ、Kafka、RocketMQ）
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>│   ├── 缓存（Redis、Caffeine）
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│   ├── 搜索（Elasticsearch、Solr）
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>│   └── 任务调度（XXL-Job、Quartz）
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>├── 微服务架构
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>│   ├── 服务注册与发现（Nacos、Eureka）
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>│   ├── 配置中心（Nacos、Apollo）
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>│   ├── 服务网关（Spring Cloud Gateway）
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>│   ├── 负载均衡（Ribbon、LoadBalancer）
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>│   ├── 熔断降级（Sentinel、Resilience4j）
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>│   ├── 链路追踪（SkyWalking、Zipkin）
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>│   └── 分布式事务（Seata）
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>│
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>├── 性能优化
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>│   ├── JVM调优
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>│   ├── SQL优化
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>│   ├── 缓存优化
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>│   └── 并发优化
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>│
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>└── 工具链
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    ├── 版本控制（Git）
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    ├── 构建工具（Maven、Gradle）
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>    ├── CI/CD（Jenkins、GitLab CI）
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>    └── 容器化（Docker）
+</span></code></pre></div>
+<hr />
+<h3 id="13">1.3 进阶技术栈<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<h4 id="2025">微服务架构（2025版）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h4>
+<p><strong>Spring Cloud 2025.0.0 "Northfields"</strong>
+- 完全兼容Spring Boot 3.5.0
+- 核心组件：
+  - Spring Cloud Gateway：API网关
+  - Spring Cloud LoadBalancer：客户端负载均衡
+  - Spring Cloud Circuit Breaker：熔断器
+  - Spring Cloud Config：配置中心
+  - Spring Cloud Stream：消息驱动</p>
+<p><strong>阿里巴巴技术栈</strong>
+- Nacos：服务注册与配置中心
+- Sentinel：流量控制与熔断降级
+- RocketMQ：消息队列
+- Seata：分布式事务
+- Dubbo：RPC框架</p>
+<h4 id="_2">云原生技术<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p><strong>容器化技术</strong>
+- Docker容器技术
+- Docker Compose多容器编排</p>
+<p><strong>性能优化技术</strong>
+- 虚拟线程（Project Loom）
+- GraalVM原生编译
+- Jakarta EE标准</p>
+<h4 id="_3">分布式系统<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p><strong>分布式理论</strong>
+- CAP定理
+- BASE理论
+- 一致性算法（Raft、Paxos）</p>
+<p><strong>分布式组件</strong>
+- 分布式ID（Snowflake、美团Leaf）
+- 分布式锁（Redis、Zookeeper）
+- 分布式缓存
+- 分布式存储</p>
+<hr />
+<h2 id="pythonai">二、Python与AI工程师技能树与学习路线<a class="headerlink" href="#pythonai" title="Permanent link">&para;</a></h2>
+<h3 id="21-python">2.1 Python学习路线<a class="headerlink" href="#21-python" title="Permanent link">&para;</a></h3>
+<h4 id="python3-4">阶段一：Python基础（3-4周）<a class="headerlink" href="#python3-4" title="Permanent link">&para;</a></h4>
+<p><strong>Python语法基础</strong>
+- 变量与数据类型（int、float、str、bool）
+- 运算符与表达式
+- 条件语句（if-elif-else）
+- 循环结构（for、while）
+- 列表、元组、字典、集合
+- 字符串操作与格式化
+- 函数定义与调用
+- 模块与包管理</p>
+<p><strong>面向对象编程</strong>
+- 类与对象
+- 封装、继承、多态
+- 特殊方法（<code>__init__</code>、<code>__str__</code>等）
+- 装饰器与生成器
+- 上下文管理器（with语句）</p>
+<p><strong>异常处理</strong>
+- try-except-finally
+- 自定义异常
+- 异常链</p>
+<p><strong>文件操作</strong>
+- 文件读写
+- CSV、JSON文件处理
+- 路径操作（pathlib）</p>
+<p><strong>学习目标：</strong>
+- 掌握Python基础语法
+- 理解面向对象编程思想
+- 能够编写基础Python程序</p>
+<hr />
+<h4 id="python4-6">阶段二：Python进阶（4-6周）<a class="headerlink" href="#python4-6" title="Permanent link">&para;</a></h4>
+<p><strong>标准库</strong>
+- collections：高级数据结构
+- itertools：迭代器工具
+- functools：函数工具
+- datetime：日期时间处理
+- re：正则表达式
+- os、sys：系统交互
+- json、pickle：数据序列化
+- logging：日志记录</p>
+<p><strong>并发编程</strong>
+- 多线程（threading）
+- 多进程（multiprocessing）
+- 协程（asyncio）
+- concurrent.futures：线程池与进程池</p>
+<p><strong>虚拟环境管理</strong>
+- venv：Python自带虚拟环境
+- virtualenv：第三方虚拟环境工具
+- conda：Anaconda环境管理
+- pip：包管理工具</p>
+<p><strong>代码规范与测试</strong>
+- PEP 8代码规范
+- type hints类型注解
+- docstring文档字符串
+- unittest、pytest：单元测试
+- coverage：代码覆盖率</p>
+<p><strong>学习目标：</strong>
+- 熟练使用Python标准库
+- 掌握并发编程基础
+- 理解Python高级特性
+- 养成良好的编码习惯</p>
+<hr />
+<h4 id="python-web-flask4-6">阶段三：Python Web开发 - Flask框架（4-6周）<a class="headerlink" href="#python-web-flask4-6" title="Permanent link">&para;</a></h4>
+<p><strong>Flask基础</strong>
+- Flask安装与环境配置
+- 路由与视图函数
+- 请求与响应对象
+- 模板引擎（Jinja2）
+- 静态文件处理</p>
+<p><strong>Flask核心功能</strong>
+- Blueprint蓝图（模块化）
+- Session会话管理
+- Cookie处理
+- 表单处理（Flask-WTF）
+- 文件上传
+- 错误处理与日志</p>
+<p><strong>数据库操作</strong>
+- SQLAlchemy ORM
+- Flask-SQLAlchemy集成
+- 数据库迁移（Flask-Migrate）
+- 数据模型设计
+- CRUD操作</p>
+<p><strong>RESTful API开发</strong>
+- RESTful设计原则
+- Flask-RESTful扩展
+- JSON数据处理
+- 请求参数验证
+- API版本管理
+- 跨域处理（CORS）</p>
+<p><strong>认证与授权</strong>
+- 用户认证系统
+- JWT Token认证
+- Flask-Login用户登录
+- 权限控制
+- 密码加密（bcrypt）</p>
+<p><strong>Flask项目结构</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>myapp/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── app/
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│   ├── __init__.py          # 应用工厂
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│   ├── models.py            # 数据模型
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│   ├── routes/              # 路由蓝图
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│   │   ├── __init__.py
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│   │   ├── auth.py          # 认证路由
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│   │   └── api.py           # API路由
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│   ├── templates/           # HTML模板
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│   ├── static/              # 静态文件
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│   └── utils.py             # 工具函数
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>├── tests/                   # 测试代码
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>├── migrations/              # 数据库迁移
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>├── config.py                # 配置文件
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>├── requirements.txt         # 依赖列表
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>└── run.py                   # 启动文件
+</span></code></pre></div></p>
+<p><strong>Flask示例代码</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span><span class="p">,</span> <span class="n">request</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask_sqlalchemy</span><span class="w"> </span><span class="kn">import</span> <span class="n">SQLAlchemy</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;SQLALCHEMY_DATABASE_URI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;sqlite:///app.db&#39;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">db</span> <span class="o">=</span> <span class="n">SQLAlchemy</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># 数据模型</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">username</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">80</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="n">email</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">120</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1"># RESTful API</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/api/users&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">])</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_users</span><span class="p">():</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="n">users</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">([{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="n">u</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="n">u</span><span class="o">.</span><span class="n">username</span><span class="p">}</span> <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">users</span><span class="p">])</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/api/users&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="k">def</span><span class="w"> </span><span class="nf">create_user</span><span class="p">():</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">],</span> <span class="n">email</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">])</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">}),</span> <span class="mi">201</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p><strong>Flask部署</strong>
+- Gunicorn：WSGI服务器
+- Nginx：反向代理
+- Docker容器化部署
+- 环境变量配置
+- 生产环境配置</p>
+<p><strong>学习目标：</strong>
+- 掌握Flask Web开发
+- 能够开发RESTful API
+- 理解Web应用架构
+- 具备基本的后端开发能力</p>
+<hr />
+<h4 id="ai4-6">阶段四：数据处理与AI基础（4-6周）<a class="headerlink" href="#ai4-6" title="Permanent link">&para;</a></h4>
+<p><strong>数据处理工具</strong>
+- NumPy：数值计算
+  - 数组操作
+  - 矩阵运算
+  - 广播机制
+  - 索引与切片</p>
+<ul>
+<li>Pandas：数据分析</li>
+<li>DataFrame操作</li>
+<li>数据清洗</li>
+<li>数据合并与连接</li>
+<li>分组聚合</li>
+<li>
+<p>时间序列分析</p>
+</li>
+<li>
+<p>Matplotlib/Seaborn：数据可视化</p>
+</li>
+<li>折线图、柱状图、散点图</li>
+<li>子图与布局</li>
+<li>样式定制</li>
+<li>统计图表</li>
+</ul>
+<p><strong>数据处理流程</strong>
+- 数据读取（CSV、Excel、JSON、SQL）
+- 数据探索性分析（EDA）
+- 数据清洗（缺失值、异常值）
+- 特征工程
+- 数据可视化</p>
+<p><strong>开发环境</strong>
+- Jupyter Notebook：交互式开发
+- JupyterLab：增强版Notebook
+- VS Code + Python插件
+- Google Colab：云端开发</p>
+<p><strong>学习目标：</strong>
+- 熟练使用Python进行数据处理
+- 掌握数据分析工具
+- 能够进行数据探索性分析
+- 为机器学习打下基础</p>
+<hr />
+<h3 id="22-ai">2.2 AI工程师学习路线<a class="headerlink" href="#22-ai" title="Permanent link">&para;</a></h3>
+<h4 id="6-8">阶段五：数学基础（6-8周）<a class="headerlink" href="#6-8" title="Permanent link">&para;</a></h4>
+<p><strong>线性代数</strong>
+- 向量与矩阵运算
+- 特征值与特征向量
+- 奇异值分解（SVD）
+- 矩阵分解</p>
+<p><strong>概率论与统计</strong>
+- 概率分布
+- 贝叶斯定理
+- 最大似然估计
+- 假设检验</p>
+<p><strong>微积分</strong>
+- 导数与偏导数
+- 梯度与方向导数
+- 链式法则
+- 优化理论</p>
+<p><strong>学习目标：</strong>
+- 理解机器学习的数学原理
+- 能够推导基本算法公式
+- 为深度学习打下数学基础</p>
+<hr />
+<h4 id="8-12_1">阶段六：机器学习（8-12周）<a class="headerlink" href="#8-12_1" title="Permanent link">&para;</a></h4>
+<p><strong>机器学习基础</strong>
+- 监督学习
+  - 线性回归
+  - 逻辑回归
+  - 决策树
+  - 随机森林
+  - 支持向量机（SVM）
+  - 梯度提升树（XGBoost、LightGBM）</p>
+<ul>
+<li>无监督学习</li>
+<li>K-Means聚类</li>
+<li>层次聚类</li>
+<li>DBSCAN</li>
+<li>主成分分析（PCA）</li>
+<li>
+<p>t-SNE降维</p>
+</li>
+<li>
+<p>模型评估</p>
+</li>
+<li>交叉验证</li>
+<li>混淆矩阵</li>
+<li>ROC曲线与AUC</li>
+<li>精确率、召回率、F1-Score</li>
+</ul>
+<p><strong>常用库</strong>
+- Scikit-learn：机器学习算法库
+- XGBoost/LightGBM：梯度提升算法</p>
+<p><strong>学习目标：</strong>
+- 掌握主流机器学习算法
+- 能够进行特征工程
+- 理解模型评估方法
+- 达到初级AI岗位要求（薪资15K-20K）</p>
+<hr />
+<h4 id="10-16">阶段七：深度学习（10-16周）<a class="headerlink" href="#10-16" title="Permanent link">&para;</a></h4>
+<p><strong>神经网络基础</strong>
+- 前向传播与反向传播
+- 激活函数
+- 损失函数
+- 优化器（SGD、Adam等）
+- 正则化（Dropout、BatchNorm）</p>
+<p><strong>深度学习架构</strong>
+- 全连接神经网络（DNN）
+- 卷积神经网络（CNN）
+  - LeNet、AlexNet、VGG
+  - ResNet、Inception
+  - MobileNet、EfficientNet</p>
+<ul>
+<li>循环神经网络（RNN）</li>
+<li>LSTM、GRU</li>
+<li>序列到序列模型</li>
+<li>
+<p>注意力机制（Attention）</p>
+</li>
+<li>
+<p>Transformer架构</p>
+</li>
+<li>Self-Attention机制</li>
+<li>BERT、GPT系列</li>
+<li>Vision Transformer（ViT）</li>
+</ul>
+<p><strong>学习目标：</strong>
+- 深入理解神经网络原理
+- 掌握主流深度学习架构
+- 能够搭建和训练深度学习模型</p>
+<hr />
+<h4 id="_4">阶段八：专业方向（根据兴趣选择）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p><strong>计算机视觉（CV）</strong>
+- 图像分类
+- 目标检测（YOLO、Faster R-CNN）
+- 图像分割（U-Net、Mask R-CNN）
+- 人脸识别
+- 图像生成（GAN、Diffusion Models）</p>
+<p><strong>自然语言处理（NLP）</strong>
+- 文本预处理
+- 词嵌入（Word2Vec、GloVe）
+- 语言模型（BERT、GPT、T5）
+- 文本分类
+- 命名实体识别（NER）
+- 机器翻译
+- 问答系统</p>
+<p><strong>OCR文字识别技术</strong></p>
+<p>OCR（Optical Character Recognition，光学字符识别）是将图像中的文字转换为可编辑文本的技术，在文档数字化、票据识别、车牌识别等场景广泛应用。</p>
+<p><strong>OCR技术原理</strong>
+1. 图像预处理
+   - 灰度化处理
+   - 二值化处理
+   - 噪声去除
+   - 倾斜矫正
+   - 边缘检测</p>
+<ol>
+<li>文字检测</li>
+<li>定位图像中的文字区域</li>
+<li>文本行分割</li>
+<li>
+<p>字符分割</p>
+</li>
+<li>
+<p>文字识别</p>
+</li>
+<li>特征提取</li>
+<li>字符分类</li>
+<li>语言模型优化</li>
+</ol>
+<p><strong>主流OCR工具对比</strong></p>
+<p><strong>1. Tesseract OCR</strong>
+- Google开源OCR引擎
+- 支持100+种语言
+- 适合印刷体识别
+- 中文识别效果一般</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytesseract</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 基础使用</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">text</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;chi_sim&#39;</span><span class="p">)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># 获取详细信息（包含位置）</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_data</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;chi_sim&#39;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="n">pytesseract</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">DICT</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>安装：</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Ubuntu</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>tesseract-ocr<span class="w"> </span>tesseract-ocr-chi-sim
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>pip<span class="w"> </span>install<span class="w"> </span>pytesseract
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># Windows/Mac: 需下载安装包</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>pip<span class="w"> </span>install<span class="w"> </span>pytesseract
+</span></code></pre></div></p>
+<p><strong>2. PaddleOCR（推荐）</strong>
+- 百度开源，基于深度学习
+- 中英文识别准确率高
+- 支持多语言（80+）
+- GPU加速支持
+- 模型轻量化</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">paddleocr</span><span class="w"> </span><span class="kn">import</span> <span class="n">PaddleOCR</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># 初始化</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">ocr</span> <span class="o">=</span> <span class="n">PaddleOCR</span><span class="p">(</span><span class="n">use_angle_cls</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">&quot;ch&quot;</span><span class="p">,</span> <span class="n">use_gpu</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># 识别图片</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">ocr</span><span class="o">.</span><span class="n">ocr</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># 解析结果</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="k">for</span> <span class="n">word_info</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        <span class="n">box</span> <span class="o">=</span> <span class="n">word_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 坐标</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>        <span class="n">text</span> <span class="o">=</span> <span class="n">word_info</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 文字</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>        <span class="n">confidence</span> <span class="o">=</span> <span class="n">word_info</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 置信度</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;文字: </span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s2">, 置信度: </span><span class="si">{</span><span class="n">confidence</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>安装：</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>paddlepaddle
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>pip<span class="w"> </span>install<span class="w"> </span>paddleocr
+</span></code></pre></div></p>
+<p><strong>3. EasyOCR</strong>
+- 支持80+种语言
+- 深度学习模型
+- 易用性好
+- PyTorch实现</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">easyocr</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># 初始化（中英文）</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">reader</span> <span class="o">=</span> <span class="n">easyocr</span><span class="o">.</span><span class="n">Reader</span><span class="p">([</span><span class="s1">&#39;ch_sim&#39;</span><span class="p">,</span> <span class="s1">&#39;en&#39;</span><span class="p">],</span> <span class="n">gpu</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># 识别</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">readtext</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">)</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># 解析结果</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">for</span> <span class="p">(</span><span class="n">bbox</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">confidence</span><span class="p">)</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;文字: </span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s2">, 置信度: </span><span class="si">{</span><span class="n">confidence</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>4. CnOCR</strong>
+- 专注中文识别
+- 轻量级
+- 识别准确率高</p>
+<p><strong>OCR工具选择建议</strong>
+- <strong>简单需求，印刷体识别</strong>：Tesseract
+- <strong>中文识别，高准确率要求</strong>：PaddleOCR（推荐）
+- <strong>多语言支持</strong>：EasyOCR
+- <strong>纯中文场景</strong>：CnOCR</p>
+<p><strong>性能对比</strong>
+| 工具 | 中文准确率 | 速度 | GPU支持 | 易用性 |
+|------|-----------|------|---------|--------|
+| Tesseract | ★★☆ | ★★★ | ❌ | ★★★ |
+| PaddleOCR | ★★★★★ | ★★★★ | ✅ | ★★★★ |
+| EasyOCR | ★★★★ | ★★★ | ✅ | ★★★★★ |
+| CnOCR | ★★★★ | ★★★★ | ❌ | ★★★★ |</p>
+<p><strong>OCR实战项目示例</strong></p>
+<p><strong>1. 身份证识别</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">paddleocr</span><span class="w"> </span><span class="kn">import</span> <span class="n">PaddleOCR</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_id_card_info</span><span class="p">(</span><span class="n">image_path</span><span class="p">):</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">ocr</span> <span class="o">=</span> <span class="n">PaddleOCR</span><span class="p">(</span><span class="n">use_angle_cls</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">&quot;ch&quot;</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">ocr</span><span class="o">.</span><span class="n">ocr</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="c1"># 提取关键信息（姓名、身份证号等）</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="n">texts</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="k">return</span> <span class="n">texts</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c1"># 使用</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="n">info</span> <span class="o">=</span> <span class="n">extract_id_card_info</span><span class="p">(</span><span class="s1">&#39;id_card.jpg&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p><strong>2. 票据识别</strong>
+- 发票识别
+- 银行流水识别
+- 合同文档识别</p>
+<p><strong>3. 车牌识别</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">paddleocr</span><span class="w"> </span><span class="kn">import</span> <span class="n">PaddleOCR</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">ocr</span> <span class="o">=</span> <span class="n">PaddleOCR</span><span class="p">(</span><span class="n">use_angle_cls</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">&quot;ch&quot;</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">result</span> <span class="o">=</span> <span class="n">ocr</span><span class="o">.</span><span class="n">ocr</span><span class="p">(</span><span class="s1">&#39;car_plate.jpg&#39;</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">plate_number</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></code></pre></div></p>
+<p><strong>OCR优化技巧</strong>
+1. <strong>图像预处理</strong>
+   - 调整对比度和亮度
+   - 去除噪声
+   - 图像矫正</p>
+<ol>
+<li><strong>模型选择</strong></li>
+<li>针对场景选择合适模型</li>
+<li>
+<p>轻量模型 vs 高精度模型</p>
+</li>
+<li>
+<p><strong>后处理</strong></p>
+</li>
+<li>正则表达式验证</li>
+<li>字典匹配</li>
+<li>业务规则校验</li>
+</ol>
+<p><strong>大语言模型（LLM）</strong>
+- GPT系列原理
+- 提示工程（Prompt Engineering）
+- 微调技术（Fine-tuning）
+- RLHF（人类反馈强化学习）
+- RAG（检索增强生成）
+- LangChain框架</p>
+<p><strong>学习目标：</strong>
+- 在特定领域深入研究
+- 完成实战项目
+- 掌握OCR文字识别技术
+- 达到高级AI岗位要求（薪资30K+）</p>
+<hr />
+<h3 id="23">2.3 核心技能树<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Python与AI工程师技能树
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>│
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>├── Python编程
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>│   ├── Python基础语法
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>│   ├── 面向对象编程
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>│   ├── Python标准库
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>│   ├── 并发编程
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>│   └── 代码规范与测试
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>│
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>├── Web开发
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>│   ├── Flask框架
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>│   ├── RESTful API
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>│   ├── 数据库操作（SQLAlchemy）
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>│   ├── 用户认证（JWT）
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>│   └── 项目部署
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>│
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>├── 数据处理
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>│   ├── NumPy数值计算
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>│   ├── Pandas数据分析
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>│   ├── 数据可视化
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>│   └── SQL数据库
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>│
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>├── 数学基础
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>│   ├── 线性代数
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>│   ├── 概率论与统计
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>│   ├── 微积分
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>│   └── 最优化理论
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>│
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>├── 机器学习
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>│   ├── 监督学习算法
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>│   ├── 无监督学习算法
+</span><span id="__span-10-32"><a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>│   ├── 特征工程
+</span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>│   ├── 模型评估与调优
+</span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>│   └── XGBoost/LightGBM
+</span><span id="__span-10-35"><a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>│
+</span><span id="__span-10-36"><a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>├── 深度学习
+</span><span id="__span-10-37"><a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>│   ├── 神经网络基础
+</span><span id="__span-10-38"><a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>│   ├── CNN（计算机视觉）
+</span><span id="__span-10-39"><a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>│   ├── RNN/LSTM（序列模型）
+</span><span id="__span-10-40"><a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>│   ├── Transformer（NLP/Vision）
+</span><span id="__span-10-41"><a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>│   └── GAN/Diffusion（生成模型）
+</span><span id="__span-10-42"><a id="__codelineno-10-42" name="__codelineno-10-42" href="#__codelineno-10-42"></a>│
+</span><span id="__span-10-43"><a id="__codelineno-10-43" name="__codelineno-10-43" href="#__codelineno-10-43"></a>├── 深度学习框架
+</span><span id="__span-10-44"><a id="__codelineno-10-44" name="__codelineno-10-44" href="#__codelineno-10-44"></a>│   ├── PyTorch（推荐）
+</span><span id="__span-10-45"><a id="__codelineno-10-45" name="__codelineno-10-45" href="#__codelineno-10-45"></a>│   ├── TensorFlow
+</span><span id="__span-10-46"><a id="__codelineno-10-46" name="__codelineno-10-46" href="#__codelineno-10-46"></a>│   ├── Keras
+</span><span id="__span-10-47"><a id="__codelineno-10-47" name="__codelineno-10-47" href="#__codelineno-10-47"></a>│   └── JAX
+</span><span id="__span-10-48"><a id="__codelineno-10-48" name="__codelineno-10-48" href="#__codelineno-10-48"></a>│
+</span><span id="__span-10-49"><a id="__codelineno-10-49" name="__codelineno-10-49" href="#__codelineno-10-49"></a>├── 专业方向
+</span><span id="__span-10-50"><a id="__codelineno-10-50" name="__codelineno-10-50" href="#__codelineno-10-50"></a>│   ├── 计算机视觉
+</span><span id="__span-10-51"><a id="__codelineno-10-51" name="__codelineno-10-51" href="#__codelineno-10-51"></a>│   │   ├── 目标检测
+</span><span id="__span-10-52"><a id="__codelineno-10-52" name="__codelineno-10-52" href="#__codelineno-10-52"></a>│   │   ├── 图像分割
+</span><span id="__span-10-53"><a id="__codelineno-10-53" name="__codelineno-10-53" href="#__codelineno-10-53"></a>│   │   ├── 图像生成
+</span><span id="__span-10-54"><a id="__codelineno-10-54" name="__codelineno-10-54" href="#__codelineno-10-54"></a>│   │   └── OCR文字识别
+</span><span id="__span-10-55"><a id="__codelineno-10-55" name="__codelineno-10-55" href="#__codelineno-10-55"></a>│   │
+</span><span id="__span-10-56"><a id="__codelineno-10-56" name="__codelineno-10-56" href="#__codelineno-10-56"></a>│   ├── 自然语言处理
+</span><span id="__span-10-57"><a id="__codelineno-10-57" name="__codelineno-10-57" href="#__codelineno-10-57"></a>│   │   ├── 文本分类
+</span><span id="__span-10-58"><a id="__codelineno-10-58" name="__codelineno-10-58" href="#__codelineno-10-58"></a>│   │   ├── 命名实体识别
+</span><span id="__span-10-59"><a id="__codelineno-10-59" name="__codelineno-10-59" href="#__codelineno-10-59"></a>│   │   ├── 机器翻译
+</span><span id="__span-10-60"><a id="__codelineno-10-60" name="__codelineno-10-60" href="#__codelineno-10-60"></a>│   │   └── 问答系统
+</span><span id="__span-10-61"><a id="__codelineno-10-61" name="__codelineno-10-61" href="#__codelineno-10-61"></a>│   │
+</span><span id="__span-10-62"><a id="__codelineno-10-62" name="__codelineno-10-62" href="#__codelineno-10-62"></a>│   └── 大语言模型
+</span><span id="__span-10-63"><a id="__codelineno-10-63" name="__codelineno-10-63" href="#__codelineno-10-63"></a>│       ├── 模型训练
+</span><span id="__span-10-64"><a id="__codelineno-10-64" name="__codelineno-10-64" href="#__codelineno-10-64"></a>│       ├── 模型微调
+</span><span id="__span-10-65"><a id="__codelineno-10-65" name="__codelineno-10-65" href="#__codelineno-10-65"></a>│       ├── 提示工程
+</span><span id="__span-10-66"><a id="__codelineno-10-66" name="__codelineno-10-66" href="#__codelineno-10-66"></a>│       └── RAG应用
+</span><span id="__span-10-67"><a id="__codelineno-10-67" name="__codelineno-10-67" href="#__codelineno-10-67"></a>│
+</span><span id="__span-10-68"><a id="__codelineno-10-68" name="__codelineno-10-68" href="#__codelineno-10-68"></a>└── 工程能力
+</span><span id="__span-10-69"><a id="__codelineno-10-69" name="__codelineno-10-69" href="#__codelineno-10-69"></a>    ├── 数据处理（ETL）
+</span><span id="__span-10-70"><a id="__codelineno-10-70" name="__codelineno-10-70" href="#__codelineno-10-70"></a>    ├── 模型部署（TorchServe、TensorFlow Serving）
+</span><span id="__span-10-71"><a id="__codelineno-10-71" name="__codelineno-10-71" href="#__codelineno-10-71"></a>    ├── GPU编程（CUDA）
+</span><span id="__span-10-72"><a id="__codelineno-10-72" name="__codelineno-10-72" href="#__codelineno-10-72"></a>    ├── 分布式训练（Horovod、DeepSpeed）
+</span><span id="__span-10-73"><a id="__codelineno-10-73" name="__codelineno-10-73" href="#__codelineno-10-73"></a>    └── MLOps（实验管理、模型监控）
+</span></code></pre></div>
+<hr />
+<h3 id="24">2.4 深度学习框架<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<h4 id="pytorch">PyTorch（推荐）<a class="headerlink" href="#pytorch" title="Permanent link">&para;</a></h4>
+<p><strong>特点：</strong>
+- 动态计算图，灵活易用
+- Pythonic风格，调试方便
+- 学术界和工业界广泛使用
+- 主流大语言模型（GLM、GPT、LLaMA）都基于PyTorch</p>
+<p><strong>核心模块：</strong>
+- <code>torch.nn</code>：神经网络层
+- <code>torch.optim</code>：优化器
+- <code>torch.utils.data</code>：数据加载
+- <code>torchvision</code>：计算机视觉
+- <code>torchtext</code>：自然语言处理
+- <code>torch.distributed</code>：分布式训练</p>
+<p><strong>学习资源：</strong>
+- PyTorch官方教程
+- 《动手学深度学习》（PyTorch版）
+- 斯坦福CS231n、CS224n课程</p>
+<hr />
+<h4 id="tensorflow">TensorFlow<a class="headerlink" href="#tensorflow" title="Permanent link">&para;</a></h4>
+<p><strong>特点：</strong>
+- 静态计算图（TensorFlow 1.x），TensorFlow 2.x引入动态图
+- 工业部署成熟
+- 强大的生态系统（TensorBoard、TF Lite、TF.js）</p>
+<p><strong>核心模块：</strong>
+- <code>tf.keras</code>：高级API
+- <code>tf.data</code>：数据管道
+- <code>tf.estimator</code>：模型训练
+- <code>TensorBoard</code>：可视化
+- <code>TF Serving</code>：模型部署</p>
+<p><strong>选择建议：</strong>
+- <strong>学术研究、快速原型</strong>：选择PyTorch
+- <strong>工业部署、移动端</strong>：考虑TensorFlow
+- <strong>初学者</strong>：建议从PyTorch开始
+- <strong>2025趋势</strong>：PyTorch已成为主流，必须掌握</p>
+<hr />
+<h2 id="linux">三、Linux运维基础知识<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 必备技能<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<h4 id="_5">系统管理<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p><strong>系统信息</strong>
+- 查看系统信息：<code>uname -a</code>、<code>hostnamectl</code>
+- 查看CPU信息：<code>lscpu</code>、<code>cat /proc/cpuinfo</code>
+- 查看内存信息：<code>free -h</code>、<code>cat /proc/meminfo</code>
+- 查看磁盘信息：<code>df -h</code>、<code>lsblk</code></p>
+<p><strong>用户管理</strong>
+- 添加用户：<code>useradd</code>、<code>adduser</code>
+- 修改密码：<code>passwd</code>
+- 切换用户：<code>su</code>、<code>sudo</code>
+- 用户组管理：<code>groupadd</code>、<code>usermod</code></p>
+<p><strong>进程管理</strong>
+- 查看进程：<code>ps aux</code>、<code>top</code>、<code>htop</code>
+- 杀死进程：<code>kill</code>、<code>killall</code>、<code>pkill</code>
+- 后台运行：<code>nohup</code>、<code>&amp;</code>
+- 进程监控：<code>systemctl</code>、<code>service</code></p>
+<p><strong>权限管理</strong>
+- 文件权限：<code>chmod</code>、<code>chown</code>、<code>chgrp</code>
+- 特殊权限：SUID、SGID、Sticky Bit
+- ACL权限：<code>setfacl</code>、<code>getfacl</code></p>
+<hr />
+<h4 id="_6">网络管理<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p><strong>网络配置</strong>
+- 查看IP：<code>ip addr</code>、<code>ifconfig</code>
+- 配置网络：<code>nmcli</code>、<code>nmtui</code>
+- 路由管理：<code>ip route</code>、<code>route</code>
+- DNS配置：<code>/etc/resolv.conf</code></p>
+<p><strong>网络诊断</strong>
+- 连通性测试：<code>ping</code>、<code>traceroute</code>
+- 端口扫描：<code>netstat</code>、<code>ss</code>、<code>lsof</code>
+- 抓包分析：<code>tcpdump</code>、<code>wireshark</code>
+- 域名解析：<code>nslookup</code>、<code>dig</code>、<code>host</code></p>
+<p><strong>防火墙</strong>
+- firewalld：<code>firewall-cmd</code>
+- iptables：规则配置
+- SELinux：安全策略</p>
+<hr />
+<h4 id="_7">服务管理<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p><strong>Systemd管理</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>systemctl<span class="w"> </span>start<span class="w"> </span>nginx<span class="w">      </span><span class="c1"># 启动服务</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx<span class="w">       </span><span class="c1"># 停止服务</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx<span class="w">    </span><span class="c1"># 重启服务</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>systemctl<span class="w"> </span>status<span class="w"> </span>nginx<span class="w">     </span><span class="c1"># 查看状态</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>nginx<span class="w">     </span><span class="c1"># 开机自启</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>systemctl<span class="w"> </span>disable<span class="w"> </span>nginx<span class="w">    </span><span class="c1"># 禁用自启</span>
+</span></code></pre></div></p>
+<p><strong>常用服务</strong>
+- Web服务器：Nginx、Apache
+- 数据库：MySQL、PostgreSQL、Redis
+- 消息队列：RabbitMQ、Kafka
+- 容器服务：Docker</p>
+<hr />
+<h3 id="32">3.2 常用命令<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<h4 id="_8">文件操作命令<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 文件查看</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>ls<span class="w"> </span>-lah<span class="w">           </span><span class="c1"># 列出文件详细信息</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>cat<span class="w"> </span>file.txt<span class="w">      </span><span class="c1"># 查看文件内容</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>less<span class="w"> </span>file.txt<span class="w">     </span><span class="c1"># 分页查看</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>head<span class="w"> </span>-n<span class="w"> </span><span class="m">20</span><span class="w"> </span>file<span class="w">   </span><span class="c1"># 查看前20行</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>tail<span class="w"> </span>-f<span class="w"> </span>logs.log<span class="w">  </span><span class="c1"># 实时查看日志</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1"># 文件搜索</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>find<span class="w"> </span>/path<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.log&quot;</span><span class="w">           </span><span class="c1"># 按名称查找</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>find<span class="w"> </span>/path<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>-7<span class="w">       </span><span class="c1"># 查找7天内修改的文件</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>grep<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>file.log<span class="w">              </span><span class="c1"># 搜索文件内容</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>grep<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;pattern&quot;</span><span class="w"> </span>/path/<span class="w">           </span><span class="c1"># 递归搜索</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="c1"># 文件操作</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>cp<span class="w"> </span><span class="nb">source</span><span class="w"> </span>dest<span class="w">       </span><span class="c1"># 复制文件</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>mv<span class="w"> </span><span class="nb">source</span><span class="w"> </span>dest<span class="w">       </span><span class="c1"># 移动/重命名</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>rm<span class="w"> </span>-rf<span class="w"> </span>directory<span class="w">     </span><span class="c1"># 删除目录</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>a/b/c<span class="w">       </span><span class="c1"># 创建多级目录</span>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>touch<span class="w"> </span>newfile.txt<span class="w">    </span><span class="c1"># 创建空文件</span>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="c1"># 文件压缩</span>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>tar<span class="w"> </span>-czvf<span class="w"> </span>archive.tar.gz<span class="w"> </span>files/<span class="w">    </span><span class="c1"># 压缩</span>
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>tar<span class="w"> </span>-xzvf<span class="w"> </span>archive.tar.gz<span class="w">           </span><span class="c1"># 解压</span>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>zip<span class="w"> </span>-r<span class="w"> </span>archive.zip<span class="w"> </span>files/<span class="w">          </span><span class="c1"># zip压缩</span>
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>unzip<span class="w"> </span>archive.zip<span class="w">                  </span><span class="c1"># zip解压</span>
+</span></code></pre></div>
+<hr />
+<h4 id="_9">系统监控命令<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 系统资源</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>top<span class="w">               </span><span class="c1"># 实时系统监控</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>htop<span class="w">              </span><span class="c1"># 增强版top</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>vmstat<span class="w"> </span><span class="m">1</span><span class="w">          </span><span class="c1"># 虚拟内存统计</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>iostat<span class="w">            </span><span class="c1"># IO统计</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>sar<span class="w">               </span><span class="c1"># 系统活动报告</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="c1"># 磁盘管理</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>df<span class="w"> </span>-h<span class="w">             </span><span class="c1"># 磁盘使用情况</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>du<span class="w"> </span>-sh<span class="w"> </span>*<span class="w">          </span><span class="c1"># 目录大小</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>lsblk<span class="w">             </span><span class="c1"># 列出块设备</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>fdisk<span class="w"> </span>-l<span class="w">          </span><span class="c1"># 查看磁盘分区</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="c1"># 内存管理</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>free<span class="w"> </span>-h<span class="w">           </span><span class="c1"># 内存使用</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>sync<span class="w">              </span><span class="c1"># 刷新文件系统缓存</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="nb">echo</span><span class="w"> </span><span class="m">3</span><span class="w"> </span>&gt;<span class="w"> </span>/proc/sys/vm/drop_caches<span class="w">  </span><span class="c1"># 清理缓存</span>
+</span></code></pre></div>
+<hr />
+<h4 id="_10">文本处理命令<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 文本查看</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>cat<span class="w"> </span>file.txt<span class="w">                    </span><span class="c1"># 查看全部</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>head<span class="w"> </span>-n<span class="w"> </span><span class="m">10</span><span class="w"> </span>file.txt<span class="w">            </span><span class="c1"># 前10行</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">10</span><span class="w"> </span>file.txt<span class="w">            </span><span class="c1"># 后10行</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>tail<span class="w"> </span>-f<span class="w"> </span>log.txt<span class="w">                </span><span class="c1"># 实时查看</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c1"># 文本搜索</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>grep<span class="w"> </span><span class="s2">&quot;pattern&quot;</span><span class="w"> </span>file.txt<span class="w">        </span><span class="c1"># 搜索</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;pattern&quot;</span><span class="w"> </span>file.txt<span class="w">     </span><span class="c1"># 反向搜索</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;pattern&quot;</span><span class="w"> </span>file.txt<span class="w">     </span><span class="c1"># 忽略大小写</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>grep<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;pattern&quot;</span><span class="w"> </span>/path/<span class="w">       </span><span class="c1"># 递归搜索</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1"># 文本处理</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>sed<span class="w"> </span><span class="s1">&#39;s/old/new/g&#39;</span><span class="w"> </span>file.txt<span class="w">     </span><span class="c1"># 替换文本</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span>file.txt<span class="w">      </span><span class="c1"># 打印第一列</span>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>cut<span class="w"> </span>-d<span class="s1">&#39;,&#39;</span><span class="w"> </span>-f1<span class="w"> </span>file.csv<span class="w">         </span><span class="c1"># 按分隔符切割</span>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>sort<span class="w"> </span>file.txt<span class="w">                  </span><span class="c1"># 排序</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>uniq<span class="w"> </span>file.txt<span class="w">                  </span><span class="c1"># 去重</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>wc<span class="w"> </span>-l<span class="w"> </span>file.txt<span class="w">                 </span><span class="c1"># 统计行数</span>
+</span></code></pre></div>
+<hr />
+<h4 id="shell">Shell脚本基础<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># 变量定义</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;World&quot;</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, </span><span class="nv">$name</span><span class="s2">&quot;</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="c1"># 条件判断</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/etc/passwd<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;File exists&quot;</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="k">fi</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="c1"># 循环</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..5<span class="o">}</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Number: </span><span class="nv">$i</span><span class="s2">&quot;</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="k">done</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="c1"># 函数</span>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="k">function</span><span class="w"> </span>greet<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, </span><span class="nv">$1</span><span class="s2">&quot;</span>
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="o">}</span>
+</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>greet<span class="w"> </span><span class="s2">&quot;User&quot;</span>
+</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>
+</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="c1"># 参数处理</span>
+</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Script name: </span><span class="nv">$0</span><span class="s2">&quot;</span>
+</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;First argument: </span><span class="nv">$1</span><span class="s2">&quot;</span>
+</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;All arguments: </span><span class="nv">$@</span><span class="s2">&quot;</span>
+</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Number of arguments: </span><span class="nv">$#</span><span class="s2">&quot;</span>
+</span></code></pre></div>
+<hr />
+<h4 id="150">必学的150个命令（分类）<a class="headerlink" href="#150" title="Permanent link">&para;</a></h4>
+<p><strong>文件管理（30个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ls, cd, pwd, mkdir, rmdir, cp, mv, rm, touch, cat, more, less,
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>head, tail, ln, find, locate, which, whereis, grep, wc, sort,
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>uniq, cut, paste, join, split, tar, gzip, zip, unzip
+</span></code></pre></div></p>
+<p><strong>系统管理（30个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ps, top, htop, kill, killall, nice, renice, bg, fg, jobs,
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>systemctl, service, cron, at, shutdown, reboot, halt, init,
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>uptime, who, w, last, history, date, cal, bc, man, info,
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>uname, hostname
+</span></code></pre></div></p>
+<p><strong>用户管理（15个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>useradd, userdel, usermod, passwd, groupadd, groupdel,
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>groupmod, su, sudo, id, whoami, groups, chage, finger, w
+</span></code></pre></div></p>
+<p><strong>权限管理（10个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>chmod, chown, chgrp, umask, chattr, lsattr, setfacl, getfacl,
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>stat, file
+</span></code></pre></div></p>
+<p><strong>网络管理（25个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>ifconfig, ip, ping, traceroute, netstat, ss, lsof, telnet,
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>ssh, scp, rsync, wget, curl, ftp, nslookup, dig, host,
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>route, iptables, firewall-cmd, nc, tcpdump, nmap, arp, hostname
+</span></code></pre></div></p>
+<p><strong>磁盘管理（20个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>df, du, fdisk, mkfs, mount, umount, fsck, dd, lsblk, blkid,
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>hdparm, parted, resize2fs, tune2fs, dumpe2fs, e2fsck, xfs_repair,
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>smartctl, iostat, iotop
+</span></code></pre></div></p>
+<p><strong>文本编辑（10个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>vi, vim, nano, emacs, sed, awk, tr, diff, patch, echo
+</span></code></pre></div></p>
+<p><strong>包管理（10个）</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>yum, dnf, apt, apt-get, dpkg, rpm, pip, npm, gem, mvn
+</span></code></pre></div></p>
+<hr />
+<h2 id="devops">四、DevOps与云原生技术<a class="headerlink" href="#devops" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 容器化技术<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<h4 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h4>
+<p><strong>核心概念</strong>
+- 镜像（Image）：应用程序及其依赖的只读模板
+- 容器（Container）：镜像的运行实例
+- 仓库（Registry）：存储和分发镜像</p>
+<p><strong>常用命令</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># 镜像管理</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>docker<span class="w"> </span>pull<span class="w"> </span>nginx:latest<span class="w">           </span><span class="c1"># 拉取镜像</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>docker<span class="w"> </span>images<span class="w">                      </span><span class="c1"># 列出镜像</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>myapp:1.0<span class="w"> </span>.<span class="w">       </span><span class="c1"># 构建镜像</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>docker<span class="w"> </span>push<span class="w"> </span>myapp:1.0<span class="w">             </span><span class="c1"># 推送镜像</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>docker<span class="w"> </span>rmi<span class="w"> </span>image_id<span class="w">               </span><span class="c1"># 删除镜像</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="c1"># 容器管理</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>nginx<span class="w">    </span><span class="c1"># 运行容器</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>docker<span class="w"> </span>ps<span class="w">                          </span><span class="c1"># 查看运行容器</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w">                       </span><span class="c1"># 查看所有容器</span>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>docker<span class="w"> </span>stop<span class="w"> </span>container_id<span class="w">           </span><span class="c1"># 停止容器</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>docker<span class="w"> </span>rm<span class="w"> </span>container_id<span class="w">             </span><span class="c1"># 删除容器</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>docker<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>container_id<span class="w">        </span><span class="c1"># 查看日志</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>container_id<span class="w"> </span>bash<span class="w">  </span><span class="c1"># 进入容器</span>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="c1"># 网络管理</span>
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>docker<span class="w"> </span>network<span class="w"> </span>ls<span class="w">                  </span><span class="c1"># 列出网络</span>
+</span><span id="__span-24-19"><a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>mynet<span class="w">        </span><span class="c1"># 创建网络</span>
+</span><span id="__span-24-20"><a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>
+</span><span id="__span-24-21"><a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a><span class="c1"># 数据卷</span>
+</span><span id="__span-24-22"><a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a>docker<span class="w"> </span>volume<span class="w"> </span>ls<span class="w">                   </span><span class="c1"># 列出数据卷</span>
+</span><span id="__span-24-23"><a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a>docker<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>myvolume<span class="w">      </span><span class="c1"># 创建数据卷</span>
+</span></code></pre></div></p>
+<p><strong>Dockerfile示例</strong>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">openjdk:21-jdk-slim</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="k">COPY</span><span class="w"> </span>target/myapp.jar<span class="w"> </span>app.jar
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">8080</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;-jar&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.jar&quot;</span><span class="p">]</span>
+</span></code></pre></div></p>
+<hr />
+<h3 id="42-cicd">4.2 CI/CD<a class="headerlink" href="#42-cicd" title="Permanent link">&para;</a></h3>
+<h4 id="_11">持续集成/持续部署<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p><strong>工具链</strong>
+- Jenkins：开源自动化服务器
+- GitLab CI：GitLab内置CI/CD
+- GitHub Actions：GitHub工作流
+- ArgoCD：GitOps持续部署
+- Tekton：Kubernetes原生CI/CD</p>
+<p><strong>典型流程</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>代码提交 → 自动构建 → 单元测试 → 代码扫描 →
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>构建镜像 → 推送仓库 → 部署测试环境 → 集成测试 →
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>部署生产环境
+</span></code></pre></div></p>
+<p><strong>Jenkins Pipeline示例</strong>
+<div class="language-groovy highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">    </span><span class="n">agent</span><span class="w"> </span><span class="n">any</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">    </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;构建&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;mvn clean package&#39;</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">            </span><span class="o">}</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;测试&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;mvn test&#39;</span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="w">            </span><span class="o">}</span>
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-27-14"><a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Docker构建&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-15"><a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-16"><a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;docker build -t myapp:${BUILD_NUMBER} .&#39;</span>
+</span><span id="__span-27-17"><a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a><span class="w">            </span><span class="o">}</span>
+</span><span id="__span-27-18"><a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-27-19"><a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a><span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;部署&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-20"><a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a><span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-27-21"><a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;kubectl apply -f k8s/deployment.yaml&#39;</span>
+</span><span id="__span-27-22"><a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a><span class="w">            </span><span class="o">}</span>
+</span><span id="__span-27-23"><a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-27-24"><a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-27-25"><a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a><span class="o">}</span>
+</span></code></pre></div></p>
+<p><strong>GitHub Actions示例</strong>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CI/CD Pipeline</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="nt">on</span><span class="p">:</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">main</span><span class="w"> </span><span class="p p-Indicator">]</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="nt">jobs</span><span class="p">:</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="w">  </span><span class="nt">build</span><span class="p">:</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v3</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Set up JDK 21</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-java@v3</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="w">      </span><span class="nt">with</span><span class="p">:</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="w">        </span><span class="nt">java-version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;21&#39;</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build with Maven</span>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mvn clean package</span>
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Docker image</span>
+</span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker build -t myapp:latest .</span>
+</span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Push to Registry</span>
+</span><span id="__span-28-21"><a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker push myapp:latest</span>
+</span></code></pre></div></p>
+<hr />
+<h3 id="43">4.3 监控与日志<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<h4 id="_12">监控系统<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p><strong>Prometheus + Grafana</strong>
+- Prometheus：时序数据库，指标采集
+- Grafana：可视化监控面板
+- AlertManager：告警管理</p>
+<p><strong>监控指标</strong>
+- 系统指标：CPU、内存、磁盘、网络
+- 应用指标：QPS、响应时间、错误率
+- JVM指标：堆内存、GC、线程数
+- 业务指标：订单量、用户量</p>
+<h4 id="_13">日志管理<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<p><strong>ELK Stack</strong>
+- Elasticsearch：日志存储与搜索
+- Logstash：日志收集与处理
+- Kibana：日志可视化分析
+- Filebeat：轻量级日志采集</p>
+<p><strong>EFK Stack</strong>
+- Fluentd：替代Logstash，更轻量</p>
+<hr />
+<h2 id="_14">五、学习资源推荐<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="51-java">5.1 Java学习资源<a class="headerlink" href="#51-java" title="Permanent link">&para;</a></h3>
+<h4 id="_15">在线教程<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://javaguide.cn/">JavaGuide</a> - Java学习路线，定期更新</li>
+<li><a href="https://www.liaoxuefeng.com/wiki/1252599548343744">廖雪峰Java教程</a> - 适合入门</li>
+<li><a href="https://www.runoob.com/java/java-tutorial.html">菜鸟教程</a> - 基础语法</li>
+<li><a href="https://yun.itheima.com/subject/javamap/">黑马程序员</a> - 视频教程</li>
+</ul>
+<h4 id="_16">书籍推荐<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<ul>
+<li>《Java核心技术（卷I、卷II）》- 经典入门书</li>
+<li>《Effective Java》- Java最佳实践</li>
+<li>《深入理解Java虚拟机》- JVM必读</li>
+<li>《Java并发编程实战》- 并发编程圣经</li>
+<li>《Spring Boot实战》- Spring Boot入门</li>
+<li>《Spring Cloud微服务架构开发实战》- 微服务实践</li>
+</ul>
+<h4 id="_17">视频课程<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<ul>
+<li>B站：尚硅谷、黑马程序员、动力节点</li>
+<li>慕课网：Java工程师体系课</li>
+<li>极客时间：《Java核心技术面试精讲》</li>
+</ul>
+<hr />
+<h3 id="52-python">5.2 Python学习资源<a class="headerlink" href="#52-python" title="Permanent link">&para;</a></h3>
+<h4 id="_18">在线教程<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400">廖雪峰Python教程</a> - 适合入门，通俗易懂</li>
+<li><a href="https://www.runoob.com/python3/python3-tutorial.html">菜鸟教程 - Python</a> - 基础语法参考</li>
+<li><a href="https://docs.python.org/zh-cn/3/">Python官方文档</a> - 权威参考</li>
+<li><a href="https://realpython.com/">Real Python</a> - 英文教程，质量高</li>
+</ul>
+<h4 id="_19">书籍推荐<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<ul>
+<li>《Python编程：从入门到实践》- 零基础入门推荐</li>
+<li>《流畅的Python》- 进阶必读</li>
+<li>《Python Cookbook》- 实用技巧集合</li>
+<li>《Effective Python》- Python最佳实践</li>
+</ul>
+<h4 id="flask">Flask框架资源<a class="headerlink" href="#flask" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://flask.palletsprojects.com/">Flask官方文档</a> - 最权威的学习资料</li>
+<li><a href="https://flask.github.net.cn/">Flask中文文档</a> - 中文翻译版</li>
+<li><a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">Flask Mega-Tutorial</a> - 完整教程</li>
+<li>《Flask Web开发实战》- 李辉 著</li>
+<li><a href="https://github.com/qzq1111/flask-restful-example">GitHub flask-restful-example</a> - 实战项目</li>
+</ul>
+<h4 id="_20">视频课程<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<ul>
+<li>B站：小甲鱼Python教程、莫烦Python</li>
+<li>Udemy：Python 3 Flask REST APIs入门与实战</li>
+<li>慕课网：Python工程师体系课</li>
+</ul>
+<h4 id="_21">实践平台<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<ul>
+<li>LeetCode - 算法练习</li>
+<li>HackerRank - 编程挑战</li>
+<li>Project Euler - 数学编程题</li>
+</ul>
+<hr />
+<h3 id="53-ai">5.3 AI学习资源<a class="headerlink" href="#53-ai" title="Permanent link">&para;</a></h3>
+<h4 id="_22">在线课程<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.coursera.org/learn/machine-learning">吴恩达机器学习</a> - ML入门经典</li>
+<li><a href="https://www.coursera.org/specializations/deep-learning">吴恩达深度学习</a> - DL系统课程</li>
+<li><a href="http://cs231n.stanford.edu/">斯坦福CS231n</a> - 计算机视觉</li>
+<li><a href="http://web.stanford.edu/class/cs224n/">斯坦福CS224n</a> - 自然语言处理</li>
+<li><a href="https://www.fast.ai/">Fast.ai</a> - 实用深度学习</li>
+</ul>
+<h4 id="_23">书籍推荐<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<ul>
+<li>《机器学习》周志华 - 西瓜书</li>
+<li>《统计学习方法》李航 - 理论基础</li>
+<li>《深度学习》Ian Goodfellow - 花书</li>
+<li>《动手学深度学习》- PyTorch/TensorFlow实战</li>
+<li>《Python机器学习》- Scikit-learn实践</li>
+</ul>
+<h4 id="_24">开源项目<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/tangyudi/Ai-Learn">Ai-Learn</a> - 200+AI实战案例</li>
+<li><a href="https://github.com/MLEveryday/100-Days-Of-ML-Code">机器学习100天</a></li>
+<li><a href="https://github.com/scutan90/DeepLearning-500-questions">深度学习500问</a></li>
+</ul>
+<h4 id="_25">实战平台<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Kaggle - 数据科学竞赛</li>
+<li>天池 - 阿里云AI竞赛</li>
+<li>和鲸社区 - 数据分析学习</li>
+<li>Papers with Code - 论文+代码</li>
+</ul>
+<hr />
+<h3 id="54-linux">5.4 Linux学习资源<a class="headerlink" href="#54-linux" title="Permanent link">&para;</a></h3>
+<h4 id="_26">在线教程<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.runoob.com/linux/linux-tutorial.html">菜鸟教程 - Linux</a></li>
+<li><a href="https://www.linuxcool.com/">Linux命令大全</a></li>
+<li><a href="http://linux.vbird.org/">鸟哥的Linux私房菜</a></li>
+<li><a href="https://www.linuxprobe.com/">Linux就该这么学</a></li>
+</ul>
+<h4 id="_27">书籍推荐<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h4>
+<ul>
+<li>《鸟哥的Linux私房菜》- 入门经典</li>
+<li>《Linux命令行与Shell脚本编程大全》</li>
+<li>《UNIX/Linux系统管理技术手册》</li>
+<li>《深入理解Linux内核》- 进阶读物</li>
+</ul>
+<h4 id="_28">实践环境<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h4>
+<ul>
+<li>虚拟机：VMware、VirtualBox</li>
+<li>云服务器：阿里云、腾讯云（学生机）</li>
+<li>WSL2：Windows下的Linux子系统</li>
+<li>Docker容器：快速搭建Linux环境</li>
+</ul>
+<hr />
+<h3 id="55-devops">5.5 DevOps学习资源<a class="headerlink" href="#55-devops" title="Permanent link">&para;</a></h3>
+<h4 id="docker_1">Docker<a class="headerlink" href="#docker_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://docs.docker.com/">Docker官方文档</a></li>
+<li>《Docker从入门到实践》</li>
+<li>《Docker技术入门与实战》</li>
+</ul>
+<h4 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Jenkins官方文档</li>
+<li>GitLab CI/CD文档</li>
+<li>《持续交付：发布可靠软件的系统方法》</li>
+</ul>
+<hr />
+<h2 id="_29">六、学习建议<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 学习方法<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>理论+实践结合</strong></li>
+<li>不要只看不练，每学一个知识点都要动手实践</li>
+<li>
+<p>通过项目巩固知识，从小项目开始</p>
+</li>
+<li>
+<p><strong>循序渐进</strong></p>
+</li>
+<li>按照路线图阶段性学习，不要贪多</li>
+<li>
+<p>打好基础，再学习进阶内容</p>
+</li>
+<li>
+<p><strong>输出倒逼输入</strong></p>
+</li>
+<li>写技术博客记录学习过程</li>
+<li>参与开源项目，提升实战能力</li>
+<li>
+<p>分享知识，教是最好的学</p>
+</li>
+<li>
+<p><strong>持续学习</strong></p>
+</li>
+<li>关注技术动态，学习新技术</li>
+<li>深入源码，理解框架原理</li>
+<li>阅读优秀代码，提升代码质量</li>
+</ol>
+<hr />
+<h3 id="62">6.2 职业发展路径<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<h4 id="java_1">Java工程师<a class="headerlink" href="#java_1" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>初级（0-2年）
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>  ↓
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>Java语法、集合、IO、多线程
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>Spring Boot基础开发
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>MySQL数据库操作
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>【薪资：8K-15K】
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>中级（2-5年）
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>  ↓
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>JVM原理与调优
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>Spring全家桶熟练使用
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>微服务架构实践
+</span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>分布式系统开发
+</span><span id="__span-29-14"><a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>【薪资：15K-30K】
+</span><span id="__span-29-15"><a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>
+</span><span id="__span-29-16"><a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>高级（5-8年）
+</span><span id="__span-29-17"><a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>  ↓
+</span><span id="__span-29-18"><a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>架构设计能力
+</span><span id="__span-29-19"><a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>高并发、高可用系统
+</span><span id="__span-29-20"><a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>技术选型与落地
+</span><span id="__span-29-21"><a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>团队技术指导
+</span><span id="__span-29-22"><a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>【薪资：30K-50K】
+</span><span id="__span-29-23"><a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>
+</span><span id="__span-29-24"><a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a>专家/架构师（8年+）
+</span><span id="__span-29-25"><a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a>  ↓
+</span><span id="__span-29-26"><a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a>系统架构设计
+</span><span id="__span-29-27"><a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>技术体系建设
+</span><span id="__span-29-28"><a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a>技术团队管理
+</span><span id="__span-29-29"><a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a>行业技术影响力
+</span><span id="__span-29-30"><a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>【薪资：50K+】
+</span></code></pre></div>
+<h4 id="ai">AI工程师<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>初级（0-2年）
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>  ↓
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>Python编程
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>机器学习算法
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>数据处理与分析
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>【薪资：10K-20K】
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>中级（2-5年）
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>  ↓
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>深度学习框架
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>CV/NLP专项能力
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>模型训练与优化
+</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>工程部署能力
+</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>【薪资：20K-35K】
+</span><span id="__span-30-15"><a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>
+</span><span id="__span-30-16"><a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>高级（5-8年）
+</span><span id="__span-30-17"><a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>  ↓
+</span><span id="__span-30-18"><a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>算法创新能力
+</span><span id="__span-30-19"><a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a>大模型应用
+</span><span id="__span-30-20"><a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a>AI系统架构
+</span><span id="__span-30-21"><a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a>论文发表能力
+</span><span id="__span-30-22"><a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a>【薪资：35K-60K】
+</span><span id="__span-30-23"><a id="__codelineno-30-23" name="__codelineno-30-23" href="#__codelineno-30-23"></a>
+</span><span id="__span-30-24"><a id="__codelineno-30-24" name="__codelineno-30-24" href="#__codelineno-30-24"></a>专家/科学家（8年+）
+</span><span id="__span-30-25"><a id="__codelineno-30-25" name="__codelineno-30-25" href="#__codelineno-30-25"></a>  ↓
+</span><span id="__span-30-26"><a id="__codelineno-30-26" name="__codelineno-30-26" href="#__codelineno-30-26"></a>前沿算法研究
+</span><span id="__span-30-27"><a id="__codelineno-30-27" name="__codelineno-30-27" href="#__codelineno-30-27"></a>AI产品落地
+</span><span id="__span-30-28"><a id="__codelineno-30-28" name="__codelineno-30-28" href="#__codelineno-30-28"></a>技术团队建设
+</span><span id="__span-30-29"><a id="__codelineno-30-29" name="__codelineno-30-29" href="#__codelineno-30-29"></a>行业影响力
+</span><span id="__span-30-30"><a id="__codelineno-30-30" name="__codelineno-30-30" href="#__codelineno-30-30"></a>【薪资：60K+】
+</span></code></pre></div>
+<hr />
+<h3 id="63">6.3 面试准备<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<h4 id="java_2">Java面试重点<a class="headerlink" href="#java_2" title="Permanent link">&para;</a></h4>
+<p><strong>基础知识</strong>
+- Java核心语法
+- 面向对象三大特性
+- 集合框架原理
+- 多线程与并发</p>
+<p><strong>框架原理</strong>
+- Spring IoC与AOP原理
+- Spring Boot自动配置
+- MyBatis执行流程
+- Spring Cloud组件</p>
+<p><strong>数据库</strong>
+- MySQL索引原理
+- 事务隔离级别
+- SQL优化技巧
+- Redis数据结构</p>
+<p><strong>系统设计</strong>
+- 微服务架构设计
+- 分布式系统设计
+- 高并发解决方案
+- 缓存设计</p>
+<h4 id="ai_1">AI面试重点<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h4>
+<p><strong>数学基础</strong>
+- 线性代数基本概念
+- 概率论与统计
+- 梯度下降原理</p>
+<p><strong>机器学习</strong>
+- 常用算法原理
+- 模型评估方法
+- 过拟合与欠拟合
+- 特征工程</p>
+<p><strong>深度学习</strong>
+- 神经网络基础
+- CNN/RNN/Transformer原理
+- 损失函数与优化器
+- 正则化技术</p>
+<p><strong>项目经验</strong>
+- 项目背景与目标
+- 数据处理流程
+- 模型选择与优化
+- 效果评估与部署</p>
+<hr />
+<h2 id="_30">七、总结<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<p>这份学习路线图涵盖了Java工程师、AI工程师以及Linux运维的核心技能。建议：</p>
+<ol>
+<li><strong>根据自己的方向选择重点学习内容</strong></li>
+<li>偏向后端开发：重点学习Java + 微服务 + 数据库</li>
+<li>偏向AI方向：重点学习Python + 机器学习 + 深度学习</li>
+<li>
+<p>全栈发展：两者结合，Java作为后端，AI作为算法能力</p>
+</li>
+<li>
+<p><strong>Linux和DevOps是通用技能</strong></p>
+</li>
+<li>无论选择哪个方向，都需要掌握Linux基础</li>
+<li>
+<p>Docker和Kubernetes是现代开发必备</p>
+</li>
+<li>
+<p><strong>持续学习，保持技术热情</strong></p>
+</li>
+<li>技术更新快，要持续关注新技术</li>
+<li>
+<p>多参与开源项目，多实践</p>
+</li>
+<li>
+<p><strong>注重基础，不要急于求成</strong></p>
+</li>
+<li>扎实的基础是进阶的前提</li>
+<li>深入理解原理比记忆API更重要</li>
+</ol>
+<hr />
+<p><strong>祝你学习顺利，成为优秀的工程师！</strong></p>
+<hr />
+<h2 id="_31">附录：常用技术网站<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
+<h3 id="_32">综合学习<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/">GitHub</a> - 开源代码托管</li>
+<li><a href="https://stackoverflow.com/">Stack Overflow</a> - 技术问答</li>
+<li><a href="https://juejin.cn/">掘金</a> - 技术社区</li>
+<li><a href="https://www.csdn.net/">CSDN</a> - 技术博客</li>
+</ul>
+<h3 id="java_3">Java技术<a class="headerlink" href="#java_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://spring.io/">Spring官网</a></li>
+<li><a href="https://www.baeldung.com/">Baeldung</a> - Java教程</li>
+<li><a href="https://www.infoq.cn/">InfoQ</a> - 技术资讯</li>
+</ul>
+<h3 id="ai_2">AI技术<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://paperswithcode.com/">Papers with Code</a> - 论文+代码</li>
+<li><a href="https://www.jiqizhixin.com/">机器之心</a> - AI资讯</li>
+<li><a href="https://www.yanxishe.com/">AI研习社</a></li>
+<li><a href="https://huggingface.co/">Hugging Face</a> - AI模型社区</li>
+</ul>
+<h3 id="_33">云服务<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.aliyun.com/">阿里云</a></li>
+<li><a href="https://cloud.tencent.com/">腾讯云</a></li>
+<li><a href="https://aws.amazon.com/">AWS</a></li>
+<li><a href="https://azure.microsoft.com/">Azure</a></li>
+</ul>
+<hr />
+<p><em>最后更新：2025年11月</em>
+<em>本文档将持续更新，欢迎补充和建议</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 sea-t. Powered by MkDocs Material.
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/sea-t/ps_wiki" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
