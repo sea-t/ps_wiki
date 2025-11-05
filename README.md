@@ -1,118 +1,177 @@
-# 学习博客 - Java & AI 工程师成长之路
+# 博客使用指南
 
-[![Deploy VitePress Site](https://github.com/sea-t/ps_wiki/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/sea-t/ps_wiki/actions/workflows/gh-pages.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+这是一份简明的博客维护和内容添加指南。
 
-> 基于 VitePress 构建的技术学习博客，专注于 Java 工程师和 AI 工程师的成长路径。
+## 📝 添加博客内容
 
-## 🌐 在线访问
+### 1. 添加新文章
 
-访问地址：[https://sea-t.github.io/ps_wiki/](https://sea-t.github.io/ps_wiki/)
-
-## 📚 内容概览
-
-- **Java 工程师路线** - 从基础到进阶的完整学习路径
-- **AI 工程师路线** - Python、机器学习、深度学习系统化教程
-- **Linux 运维** - 系统管理、网络配置、Shell 脚本
-- **DevOps** - Docker、CI/CD、云原生技术
-- **AI 资讯** - 追踪 AI 领域最新动态和技术趋势
-
-## 🚀 快速开始
-
-### 环境要求
-
-- Node.js 18.0+
-- npm 或 yarn
-
-### 本地开发
+在 `docs/` 目录下创建或编辑 Markdown 文件：
 
 ```bash
-# 安装依赖
-npm install
+# 例如：添加一篇新的 AI 资讯
+docs/ai-news/2025-12-updates.md
 
-# 启动开发服务器
+# 或添加新的学习路线
+docs/roadmap/frontend-engineer.md
+```
+
+### 2. 文章格式
+
+每篇文章使用标准 Markdown 格式：
+
+```markdown
+# 文章标题
+
+文章内容...
+
+## 二级标题
+
+内容段落...
+```
+
+### 3. 更新导航和侧边栏
+
+编辑 `docs/.vitepress/config.ts`：
+
+```typescript
+// 导航栏配置示例
+nav: [
+  { text: '首页', link: '/' },
+  { text: '学习路线', link: '/roadmap/java-ai-engineer' },
+  { text: 'AI 资讯', link: '/ai-news/' },
+  { text: '关于', link: '/about' }
+]
+
+// 侧边栏配置示例（为 AI 资讯添加新文章）
+sidebar: {
+  '/ai-news/': [
+    {
+      text: 'AI 资讯',
+      items: [
+        { text: 'AI 资讯概览', link: '/ai-news/' },
+        { text: '2025年AI趋势', link: '/ai-news/2025-trends' },
+        { text: '新文章标题', link: '/ai-news/new-article' }  // 新增
+      ]
+    }
+  ]
+}
+```
+
+## 🚀 本地开发
+
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 启动开发服务器
+
+```bash
+npm run docs:dev
+```
+
+访问 `http://localhost:5173/ps_wiki/` 预览。
+
+### 构建生产版本
+
+```bash
+npm run docs:build
+```
+
+## 📁 目录结构
+
+```
+docs/
+├── .vitepress/
+│   ├── config.ts        # 站点配置
+│   └── theme/           # 自定义主题
+├── index.md             # 首页
+├── about.md             # 关于页面
+├── roadmap/             # 学习路线
+│   └── java-ai-engineer.md
+└── ai-news/             # AI 资讯
+    ├── index.md
+    └── 2025-trends.md
+```
+
+## 🎨 自定义主题
+
+编辑 `docs/.vitepress/theme/custom.css` 修改样式。
+
+主题色变量：
+
+```css
+:root {
+  --vp-c-brand-1: #7c3aed;  /* 主色调 */
+  --vp-c-brand-2: #6d28d9;
+  --vp-c-brand-3: #5b21b6;
+}
+```
+
+## 🔧 配置说明
+
+### 站点信息
+
+`docs/.vitepress/config.ts`:
+
+```typescript
+export default defineConfig({
+  title: '站点标题',
+  description: '站点描述',
+  base: '/ps_wiki/',
+})
+```
+
+### 搜索功能
+
+使用本地搜索，无需额外配置。
+
+## 📤 部署
+
+### 自动部署
+
+推送到 `main` 或 `master` 分支会自动触发 GitHub Actions 部署。
+
+### 手动部署
+
+```bash
+npm run docs:build
+# 将 docs/.vitepress/dist 目录部署到服务器
+```
+
+## 📋 常用命令
+
+```bash
+# 开发
 npm run docs:dev
 
-# 构建生产版本
+# 构建
 npm run docs:build
 
 # 预览构建结果
 npm run docs:preview
 ```
 
-## 📁 项目结构
+## 🐛 故障排查
 
-```
-ps_wiki/
-├── docs/                      # VitePress 文档目录
-│   ├── .vitepress/           # VitePress 配置
-│   │   ├── config.ts         # 站点配置
-│   │   └── theme/            # 自定义主题
-│   │       ├── index.ts      # 主题入口
-│   │       └── custom.css    # 自定义样式
-│   ├── index.md              # 首页
-│   ├── roadmap/              # 学习路线
-│   ├── ai-news/              # AI 资讯
-│   └── about.md              # 关于页面
-├── .github/
-│   └── workflows/
-│       └── gh-pages.yml      # GitHub Actions 部署配置
-├── package.json              # 项目配置
-└── README.md                 # 项目说明（本文件）
-```
+### 构建失败
 
-## 🎨 主题特色
+1. 检查 `package-lock.json` 是否存在
+2. 运行 `npm install` 重新安装依赖
+3. 检查 Markdown 文件语法是否正确
 
-- ✨ 紫色渐变主题配色
-- 🌓 完美支持深色/浅色模式
-- 📱 响应式设计，移动端友好
-- 🔍 强大的本地搜索功能
-- ⚡ 快速的页面加载速度
-- 🎯 清晰的导航和侧边栏组织
+### 样式不生效
 
-## 🛠️ 技术栈
+1. 清除缓存：删除 `docs/.vitepress/cache` 目录
+2. 重启开发服务器
 
-- **框架**: [VitePress](https://vitepress.dev/) - 基于 Vite 和 Vue 的静态站点生成器
-- **部署**: GitHub Pages + GitHub Actions
-- **样式**: 自定义 CSS 主题
-- **语言**: TypeScript + Markdown
+## 📚 参考资料
 
-## 📝 内容贡献
-
-欢迎提交问题和改进建议！
-
-1. Fork 本仓库
-2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开一个 Pull Request
-
-### 写作规范
-
-- 使用 Markdown 格式编写
-- 代码示例要有语法高亮标记
-- 添加适当的标题层级和导航
-- 保持内容的准确性和时效性
-
-## 📄 License
-
-本项目采用 [MIT](LICENSE) 协议开源。
-
-## 🤝 联系方式
-
-- GitHub: [@sea-t](https://github.com/sea-t)
-- Issues: [提交问题](https://github.com/sea-t/ps_wiki/issues)
-
-## 🙏 致谢
-
-- [VitePress](https://vitepress.dev/) - 优秀的文档站点生成器
-- [Vue.js](https://vuejs.org/) - 渐进式 JavaScript 框架
-- 所有贡献者的支持和帮助
+- [VitePress 官方文档](https://vitepress.dev/)
+- [Markdown 语法指南](https://www.markdownguide.org/)
 
 ---
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/sea-t">sea-t</a>
-  <br>
-  © 2019-2025 sea-t's Learning Blog
-</p>
+更多问题请提交 [Issue](https://github.com/sea-t/ps_wiki/issues)
