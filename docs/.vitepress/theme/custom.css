@@ -1,0 +1,265 @@
+/**
+ * 自定义主题样式
+ * 参考 https://yqqy.top/ 的设计风格
+ */
+
+/* ============================================
+   主题色彩变量 - 紫色主题
+   ============================================ */
+:root {
+  /* 主色调 - 紫色系 */
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #6d28d9;
+  --vp-c-brand-3: #5b21b6;
+  --vp-c-brand-soft: rgba(124, 58, 237, 0.14);
+
+  /* 强调色 */
+  --vp-c-accent-1: #3b82f6;
+  --vp-c-accent-2: #2563eb;
+  --vp-c-accent-3: #1d4ed8;
+
+  /* 自定义渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* 按钮渐变 */
+  --vp-button-brand-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --vp-button-brand-hover-bg: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* 深色模式 */
+.dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #7c3aed;
+  --vp-c-brand-soft: rgba(167, 139, 250, 0.16);
+}
+
+/* ============================================
+   导航栏优化
+   ============================================ */
+.VPNavBar {
+  border-bottom: 1px solid var(--vp-c-divider);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dark .VPNavBar {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* 导航栏链接悬停效果 */
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuGroup:hover .text {
+  color: var(--vp-c-brand-1);
+  transition: color 0.25s;
+}
+
+/* ============================================
+   首页 Hero 区域优化
+   ============================================ */
+.VPHero .name {
+  background: var(--vp-home-hero-name-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHero .tagline {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Hero 按钮优化 */
+.VPButton.brand {
+  background: var(--vp-button-brand-bg);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand:hover {
+  background: var(--vp-button-brand-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+}
+
+/* ============================================
+   特性卡片优化
+   ============================================ */
+.VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  background: var(--vp-c-bg-soft);
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(124, 58, 237, 0.15);
+}
+
+.VPFeature .icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+/* ============================================
+   侧边栏优化
+   ============================================ */
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-divider);
+}
+
+/* 侧边栏链接悬停效果 */
+.VPSidebarItem.level-0.is-link > .item > .link:hover .text {
+  color: var(--vp-c-brand-1);
+}
+
+.VPSidebarItem.level-0.is-active > .item .link .text {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* 侧边栏组标题优化 */
+.group .VPSidebarItem.level-0 .text {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   内容区域优化
+   ============================================ */
+/* 代码块优化 */
+.vp-code-group {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+/* 表格优化 */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+/* 引用块优化 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding-left: 16px;
+  margin: 16px 0;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 0 8px 8px 0;
+}
+
+/* ============================================
+   页脚优化
+   ============================================ */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+/* ============================================
+   滚动条优化
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+/* ============================================
+   搜索框优化
+   ============================================ */
+.DocSearch-Button {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.DocSearch-Button:hover {
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
+}
+
+/* ============================================
+   响应式优化
+   ============================================ */
+@media (max-width: 768px) {
+  .VPNavBar {
+    padding: 0 16px;
+  }
+
+  .VPFeature {
+    padding: 20px;
+  }
+}
+
+/* ============================================
+   自定义动画
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPFeature {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   打印样式优化
+   ============================================ */
+@media print {
+  .VPNavBar,
+  .VPSidebar,
+  .VPFooter {
+    display: none;
+  }
+}
