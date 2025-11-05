@@ -12,10 +12,11 @@
   - [1.1 学习阶段规划](#11-学习阶段规划)
   - [1.2 核心技能树](#12-核心技能树)
   - [1.3 进阶技术栈](#13-进阶技术栈)
-- [二、AI工程师技能树与学习路线](#二ai工程师技能树与学习路线)
-  - [2.1 学习阶段规划](#21-学习阶段规划)
-  - [2.2 核心技能树](#22-核心技能树)
-  - [2.3 深度学习框架](#23-深度学习框架)
+- [二、Python与AI工程师技能树与学习路线](#二python与ai工程师技能树与学习路线)
+  - [2.1 Python学习路线](#21-python学习路线)
+  - [2.2 AI工程师学习路线](#22-ai工程师学习路线)
+  - [2.3 核心技能树](#23-核心技能树)
+  - [2.4 深度学习框架](#24-深度学习框架)
 - [三、Linux运维基础知识](#三linux运维基础知识)
   - [3.1 必备技能](#31-必备技能)
   - [3.2 常用命令](#32-常用命令)
@@ -191,7 +192,7 @@ Java工程师技能树
     ├── 版本控制（Git）
     ├── 构建工具（Maven、Gradle）
     ├── CI/CD（Jenkins、GitLab CI）
-    └── 容器化（Docker、Kubernetes）
+    └── 容器化（Docker）
 ```
 
 ---
@@ -218,11 +219,9 @@ Java工程师技能树
 
 #### 云原生技术
 
-**容器化与编排**
+**容器化技术**
 - Docker容器技术
-- Kubernetes集群管理
-- Helm包管理
-- Service Mesh（Istio）
+- Docker Compose多容器编排
 
 **性能优化技术**
 - 虚拟线程（Project Loom）
@@ -244,32 +243,238 @@ Java工程师技能树
 
 ---
 
-## 二、AI工程师技能树与学习路线
+## 二、Python与AI工程师技能树与学习路线
 
-### 2.1 学习阶段规划
+### 2.1 Python学习路线
 
-#### 阶段一：编程基础（4-6周）
+#### 阶段一：Python基础（3-4周）
 
-**Python语言**
-- Python语法基础
-- 面向对象编程
-- 常用标准库
-- 虚拟环境管理（venv、conda）
+**Python语法基础**
+- 变量与数据类型（int、float、str、bool）
+- 运算符与表达式
+- 条件语句（if-elif-else）
+- 循环结构（for、while）
+- 列表、元组、字典、集合
+- 字符串操作与格式化
+- 函数定义与调用
+- 模块与包管理
 
-**数据处理工具**
-- NumPy：数值计算
-- Pandas：数据分析
-- Matplotlib/Seaborn：数据可视化
-- Jupyter Notebook：交互式开发
+**面向对象编程**
+- 类与对象
+- 封装、继承、多态
+- 特殊方法（`__init__`、`__str__`等）
+- 装饰器与生成器
+- 上下文管理器（with语句）
+
+**异常处理**
+- try-except-finally
+- 自定义异常
+- 异常链
+
+**文件操作**
+- 文件读写
+- CSV、JSON文件处理
+- 路径操作（pathlib）
 
 **学习目标：**
-- 熟练使用Python编程
-- 掌握数据处理和可视化
-- 能够进行数据探索性分析
+- 掌握Python基础语法
+- 理解面向对象编程思想
+- 能够编写基础Python程序
 
 ---
 
-#### 阶段二：数学基础（6-8周）
+#### 阶段二：Python进阶（4-6周）
+
+**标准库**
+- collections：高级数据结构
+- itertools：迭代器工具
+- functools：函数工具
+- datetime：日期时间处理
+- re：正则表达式
+- os、sys：系统交互
+- json、pickle：数据序列化
+- logging：日志记录
+
+**并发编程**
+- 多线程（threading）
+- 多进程（multiprocessing）
+- 协程（asyncio）
+- concurrent.futures：线程池与进程池
+
+**虚拟环境管理**
+- venv：Python自带虚拟环境
+- virtualenv：第三方虚拟环境工具
+- conda：Anaconda环境管理
+- pip：包管理工具
+
+**代码规范与测试**
+- PEP 8代码规范
+- type hints类型注解
+- docstring文档字符串
+- unittest、pytest：单元测试
+- coverage：代码覆盖率
+
+**学习目标：**
+- 熟练使用Python标准库
+- 掌握并发编程基础
+- 理解Python高级特性
+- 养成良好的编码习惯
+
+---
+
+#### 阶段三：Python Web开发 - Flask框架（4-6周）
+
+**Flask基础**
+- Flask安装与环境配置
+- 路由与视图函数
+- 请求与响应对象
+- 模板引擎（Jinja2）
+- 静态文件处理
+
+**Flask核心功能**
+- Blueprint蓝图（模块化）
+- Session会话管理
+- Cookie处理
+- 表单处理（Flask-WTF）
+- 文件上传
+- 错误处理与日志
+
+**数据库操作**
+- SQLAlchemy ORM
+- Flask-SQLAlchemy集成
+- 数据库迁移（Flask-Migrate）
+- 数据模型设计
+- CRUD操作
+
+**RESTful API开发**
+- RESTful设计原则
+- Flask-RESTful扩展
+- JSON数据处理
+- 请求参数验证
+- API版本管理
+- 跨域处理（CORS）
+
+**认证与授权**
+- 用户认证系统
+- JWT Token认证
+- Flask-Login用户登录
+- 权限控制
+- 密码加密（bcrypt）
+
+**Flask项目结构**
+```
+myapp/
+├── app/
+│   ├── __init__.py          # 应用工厂
+│   ├── models.py            # 数据模型
+│   ├── routes/              # 路由蓝图
+│   │   ├── __init__.py
+│   │   ├── auth.py          # 认证路由
+│   │   └── api.py           # API路由
+│   ├── templates/           # HTML模板
+│   ├── static/              # 静态文件
+│   └── utils.py             # 工具函数
+├── tests/                   # 测试代码
+├── migrations/              # 数据库迁移
+├── config.py                # 配置文件
+├── requirements.txt         # 依赖列表
+└── run.py                   # 启动文件
+```
+
+**Flask示例代码**
+```python
+from flask import Flask, jsonify, request
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+db = SQLAlchemy(app)
+
+# 数据模型
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+
+# RESTful API
+@app.route('/api/users', methods=['GET'])
+def get_users():
+    users = User.query.all()
+    return jsonify([{'id': u.id, 'username': u.username} for u in users])
+
+@app.route('/api/users', methods=['POST'])
+def create_user():
+    data = request.get_json()
+    user = User(username=data['username'], email=data['email'])
+    db.session.add(user)
+    db.session.commit()
+    return jsonify({'id': user.id}), 201
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+**Flask部署**
+- Gunicorn：WSGI服务器
+- Nginx：反向代理
+- Docker容器化部署
+- 环境变量配置
+- 生产环境配置
+
+**学习目标：**
+- 掌握Flask Web开发
+- 能够开发RESTful API
+- 理解Web应用架构
+- 具备基本的后端开发能力
+
+---
+
+#### 阶段四：数据处理与AI基础（4-6周）
+
+**数据处理工具**
+- NumPy：数值计算
+  - 数组操作
+  - 矩阵运算
+  - 广播机制
+  - 索引与切片
+
+- Pandas：数据分析
+  - DataFrame操作
+  - 数据清洗
+  - 数据合并与连接
+  - 分组聚合
+  - 时间序列分析
+
+- Matplotlib/Seaborn：数据可视化
+  - 折线图、柱状图、散点图
+  - 子图与布局
+  - 样式定制
+  - 统计图表
+
+**数据处理流程**
+- 数据读取（CSV、Excel、JSON、SQL）
+- 数据探索性分析（EDA）
+- 数据清洗（缺失值、异常值）
+- 特征工程
+- 数据可视化
+
+**开发环境**
+- Jupyter Notebook：交互式开发
+- JupyterLab：增强版Notebook
+- VS Code + Python插件
+- Google Colab：云端开发
+
+**学习目标：**
+- 熟练使用Python进行数据处理
+- 掌握数据分析工具
+- 能够进行数据探索性分析
+- 为机器学习打下基础
+
+---
+
+### 2.2 AI工程师学习路线
+
+#### 阶段五：数学基础（6-8周）
 
 **线性代数**
 - 向量与矩阵运算
@@ -296,7 +501,7 @@ Java工程师技能树
 
 ---
 
-#### 阶段三：机器学习（8-12周）
+#### 阶段六：机器学习（8-12周）
 
 **机器学习基础**
 - 监督学习
@@ -332,7 +537,7 @@ Java工程师技能树
 
 ---
 
-#### 阶段四：深度学习（10-16周）
+#### 阶段七：深度学习（10-16周）
 
 **神经网络基础**
 - 前向传播与反向传播
@@ -365,7 +570,7 @@ Java工程师技能树
 
 ---
 
-#### 阶段五：专业方向（根据兴趣选择）
+#### 阶段八：专业方向（根据兴趣选择）
 
 **计算机视觉（CV）**
 - 图像分类
@@ -383,6 +588,176 @@ Java工程师技能树
 - 机器翻译
 - 问答系统
 
+**OCR文字识别技术**
+
+OCR（Optical Character Recognition，光学字符识别）是将图像中的文字转换为可编辑文本的技术，在文档数字化、票据识别、车牌识别等场景广泛应用。
+
+**OCR技术原理**
+1. 图像预处理
+   - 灰度化处理
+   - 二值化处理
+   - 噪声去除
+   - 倾斜矫正
+   - 边缘检测
+
+2. 文字检测
+   - 定位图像中的文字区域
+   - 文本行分割
+   - 字符分割
+
+3. 文字识别
+   - 特征提取
+   - 字符分类
+   - 语言模型优化
+
+**主流OCR工具对比**
+
+**1. Tesseract OCR**
+- Google开源OCR引擎
+- 支持100+种语言
+- 适合印刷体识别
+- 中文识别效果一般
+
+```python
+import pytesseract
+from PIL import Image
+
+# 基础使用
+image = Image.open('image.png')
+text = pytesseract.image_to_string(image, lang='chi_sim')
+print(text)
+
+# 获取详细信息（包含位置）
+data = pytesseract.image_to_data(image, lang='chi_sim', output_type=pytesseract.Output.DICT)
+```
+
+**安装：**
+```bash
+# Ubuntu
+sudo apt-get install tesseract-ocr tesseract-ocr-chi-sim
+pip install pytesseract
+
+# Windows/Mac: 需下载安装包
+pip install pytesseract
+```
+
+**2. PaddleOCR（推荐）**
+- 百度开源，基于深度学习
+- 中英文识别准确率高
+- 支持多语言（80+）
+- GPU加速支持
+- 模型轻量化
+
+```python
+from paddleocr import PaddleOCR
+
+# 初始化
+ocr = PaddleOCR(use_angle_cls=True, lang="ch", use_gpu=False)
+
+# 识别图片
+result = ocr.ocr('image.png', cls=True)
+
+# 解析结果
+for line in result:
+    for word_info in line:
+        box = word_info[0]  # 坐标
+        text = word_info[1][0]  # 文字
+        confidence = word_info[1][1]  # 置信度
+        print(f"文字: {text}, 置信度: {confidence:.2f}")
+```
+
+**安装：**
+```bash
+pip install paddlepaddle
+pip install paddleocr
+```
+
+**3. EasyOCR**
+- 支持80+种语言
+- 深度学习模型
+- 易用性好
+- PyTorch实现
+
+```python
+import easyocr
+
+# 初始化（中英文）
+reader = easyocr.Reader(['ch_sim', 'en'], gpu=False)
+
+# 识别
+result = reader.readtext('image.png')
+
+# 解析结果
+for (bbox, text, confidence) in result:
+    print(f"文字: {text}, 置信度: {confidence:.2f}")
+```
+
+**4. CnOCR**
+- 专注中文识别
+- 轻量级
+- 识别准确率高
+
+**OCR工具选择建议**
+- **简单需求，印刷体识别**：Tesseract
+- **中文识别，高准确率要求**：PaddleOCR（推荐）
+- **多语言支持**：EasyOCR
+- **纯中文场景**：CnOCR
+
+**性能对比**
+| 工具 | 中文准确率 | 速度 | GPU支持 | 易用性 |
+|------|-----------|------|---------|--------|
+| Tesseract | ★★☆ | ★★★ | ❌ | ★★★ |
+| PaddleOCR | ★★★★★ | ★★★★ | ✅ | ★★★★ |
+| EasyOCR | ★★★★ | ★★★ | ✅ | ★★★★★ |
+| CnOCR | ★★★★ | ★★★★ | ❌ | ★★★★ |
+
+**OCR实战项目示例**
+
+**1. 身份证识别**
+```python
+from paddleocr import PaddleOCR
+
+def extract_id_card_info(image_path):
+    ocr = PaddleOCR(use_angle_cls=True, lang="ch")
+    result = ocr.ocr(image_path)
+
+    # 提取关键信息（姓名、身份证号等）
+    texts = [line[1][0] for line in result[0]]
+    return texts
+
+# 使用
+info = extract_id_card_info('id_card.jpg')
+```
+
+**2. 票据识别**
+- 发票识别
+- 银行流水识别
+- 合同文档识别
+
+**3. 车牌识别**
+```python
+from paddleocr import PaddleOCR
+
+ocr = PaddleOCR(use_angle_cls=False, lang="ch")
+result = ocr.ocr('car_plate.jpg', cls=False)
+plate_number = result[0][0][1][0]
+```
+
+**OCR优化技巧**
+1. **图像预处理**
+   - 调整对比度和亮度
+   - 去除噪声
+   - 图像矫正
+
+2. **模型选择**
+   - 针对场景选择合适模型
+   - 轻量模型 vs 高精度模型
+
+3. **后处理**
+   - 正则表达式验证
+   - 字典匹配
+   - 业务规则校验
+
 **大语言模型（LLM）**
 - GPT系列原理
 - 提示工程（Prompt Engineering）
@@ -394,19 +769,35 @@ Java工程师技能树
 **学习目标：**
 - 在特定领域深入研究
 - 完成实战项目
+- 掌握OCR文字识别技术
 - 达到高级AI岗位要求（薪资30K+）
 
 ---
 
-### 2.2 核心技能树
+### 2.3 核心技能树
 
 ```
-AI工程师技能树
+Python与AI工程师技能树
 │
-├── 编程能力
-│   ├── Python（必须）
-│   ├── C++（工程部署）
-│   └── SQL（数据处理）
+├── Python编程
+│   ├── Python基础语法
+│   ├── 面向对象编程
+│   ├── Python标准库
+│   ├── 并发编程
+│   └── 代码规范与测试
+│
+├── Web开发
+│   ├── Flask框架
+│   ├── RESTful API
+│   ├── 数据库操作（SQLAlchemy）
+│   ├── 用户认证（JWT）
+│   └── 项目部署
+│
+├── 数据处理
+│   ├── NumPy数值计算
+│   ├── Pandas数据分析
+│   ├── 数据可视化
+│   └── SQL数据库
 │
 ├── 数学基础
 │   ├── 线性代数
@@ -438,7 +829,8 @@ AI工程师技能树
 │   ├── 计算机视觉
 │   │   ├── 目标检测
 │   │   ├── 图像分割
-│   │   └── 图像生成
+│   │   ├── 图像生成
+│   │   └── OCR文字识别
 │   │
 │   ├── 自然语言处理
 │   │   ├── 文本分类
@@ -462,7 +854,7 @@ AI工程师技能树
 
 ---
 
-### 2.3 深度学习框架
+### 2.4 深度学习框架
 
 #### PyTorch（推荐）
 
@@ -801,64 +1193,6 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
----
-
-#### Kubernetes
-
-**核心概念**
-- Pod：最小部署单元
-- Service：服务发现与负载均衡
-- Deployment：应用部署管理
-- ConfigMap/Secret：配置管理
-- Ingress：HTTP路由
-- PersistentVolume：持久化存储
-
-**常用命令**
-```bash
-# 集群管理
-kubectl cluster-info              # 集群信息
-kubectl get nodes                 # 查看节点
-
-# Pod管理
-kubectl get pods                  # 查看Pod
-kubectl describe pod pod-name     # 查看详情
-kubectl logs pod-name             # 查看日志
-kubectl exec -it pod-name -- bash # 进入Pod
-
-# 部署管理
-kubectl apply -f deployment.yaml  # 应用配置
-kubectl get deployments           # 查看部署
-kubectl scale deploy app --replicas=3  # 扩缩容
-kubectl rollout status deploy app # 查看发布状态
-kubectl rollout undo deploy app   # 回滚
-
-# 服务管理
-kubectl get services              # 查看服务
-kubectl expose deploy app --port=80  # 暴露服务
-```
-
-**Deployment示例**
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: myapp
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: myapp
-  template:
-    metadata:
-      labels:
-        app: myapp
-    spec:
-      containers:
-      - name: myapp
-        image: myapp:1.0
-        ports:
-        - containerPort: 8080
-```
 
 ---
 
@@ -989,7 +1323,40 @@ jobs:
 
 ---
 
-### 5.2 AI学习资源
+### 5.2 Python学习资源
+
+#### 在线教程
+- [廖雪峰Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400) - 适合入门，通俗易懂
+- [菜鸟教程 - Python](https://www.runoob.com/python3/python3-tutorial.html) - 基础语法参考
+- [Python官方文档](https://docs.python.org/zh-cn/3/) - 权威参考
+- [Real Python](https://realpython.com/) - 英文教程，质量高
+
+#### 书籍推荐
+- 《Python编程：从入门到实践》- 零基础入门推荐
+- 《流畅的Python》- 进阶必读
+- 《Python Cookbook》- 实用技巧集合
+- 《Effective Python》- Python最佳实践
+
+#### Flask框架资源
+- [Flask官方文档](https://flask.palletsprojects.com/) - 最权威的学习资料
+- [Flask中文文档](https://flask.github.net.cn/) - 中文翻译版
+- [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) - 完整教程
+- 《Flask Web开发实战》- 李辉 著
+- [GitHub flask-restful-example](https://github.com/qzq1111/flask-restful-example) - 实战项目
+
+#### 视频课程
+- B站：小甲鱼Python教程、莫烦Python
+- Udemy：Python 3 Flask REST APIs入门与实战
+- 慕课网：Python工程师体系课
+
+#### 实践平台
+- LeetCode - 算法练习
+- HackerRank - 编程挑战
+- Project Euler - 数学编程题
+
+---
+
+### 5.3 AI学习资源
 
 #### 在线课程
 - [吴恩达机器学习](https://www.coursera.org/learn/machine-learning) - ML入门经典
@@ -1018,7 +1385,7 @@ jobs:
 
 ---
 
-### 5.3 Linux学习资源
+### 5.4 Linux学习资源
 
 #### 在线教程
 - [菜鸟教程 - Linux](https://www.runoob.com/linux/linux-tutorial.html)
@@ -1040,17 +1407,12 @@ jobs:
 
 ---
 
-### 5.4 DevOps学习资源
+### 5.5 DevOps学习资源
 
 #### Docker
 - [Docker官方文档](https://docs.docker.com/)
 - 《Docker从入门到实践》
-- 《Kubernetes权威指南》
-
-#### Kubernetes
-- [Kubernetes官方文档](https://kubernetes.io/zh-cn/docs/home/)
-- [Kubernetes中文社区](https://www.kubernetes.org.cn/)
-- 《Kubernetes in Action》
+- 《Docker技术入门与实战》
 
 #### CI/CD
 - Jenkins官方文档
