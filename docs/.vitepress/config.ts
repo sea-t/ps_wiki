@@ -29,108 +29,30 @@ export default defineConfig({
 
     // 导航栏
     nav: [
-      { text: '🏠 首页', link: '/' },
-      {
-        text: '📚 学习路线',
-        items: [
-          {
-            text: '🎯 Java 工程师',
-            link: '/roadmap/java-ai-engineer#一java工程师技能树与学习路线'
-          },
-          {
-            text: '🤖 AI 工程师',
-            link: '/roadmap/java-ai-engineer#二python与ai工程师技能树与学习路线'
-          },
-          {
-            text: '🐧 Linux 运维',
-            link: '/roadmap/java-ai-engineer#三linux运维基础知识'
-          },
-          {
-            text: '🐳 DevOps',
-            link: '/roadmap/java-ai-engineer#四devops与云原生技术'
-          }
-        ]
-      },
-      {
-        text: '📝 技术笔记',
-        items: [
-          {
-            text: '☕ Java 后端',
-            items: [
-              { text: 'Spring Boot', link: '/notes/java/spring-boot' },
-              { text: '微服务架构', link: '/notes/java/microservices' }
-            ]
-          },
-          {
-            text: '🤖 AI & Python',
-            items: [
-              { text: 'Python 基础', link: '/notes/python/basics' },
-              { text: '机器学习', link: '/notes/ai/ml' }
-            ]
-          }
-        ]
-      },
-      {
-        text: '📰 AI 资讯',
-        items: [
-          { text: '资讯概览', link: '/ai-news/' },
-          { text: '2025年AI趋势', link: '/ai-news/2025-trends' }
-        ],
-        activeMatch: '/ai-news/'
-      },
-      {
-        text: '🔧 工具',
-        items: [
-          { text: '开发工具推荐', link: '/tools/dev-tools' },
-          { text: 'AI 工具集', link: '/tools/ai-tools' }
-        ]
-      },
-      {
-        text: '关于',
-        items: [
-          { text: '💡 关于本站', link: '/about' },
-          { text: '📧 联系方式', link: '/contact' },
-          { text: '🔗 GitHub', link: 'https://github.com/sea-t/ps_wiki' }
-        ]
-      }
+      { text: '首页', link: '/' },
+      { text: '学习路线', link: '/roadmap/java-ai-engineer' },
+      { text: 'AI 资讯', link: '/ai-news/' },
+      { text: '关于', link: '/about' }
     ],
 
     // 侧边栏
     sidebar: {
       '/roadmap/': [
         {
-          text: '📚 学习路线',
+          text: '学习路线',
           collapsed: false,
           items: [
-            { text: 'Java & AI 工程师学习路线图', link: '/roadmap/java-ai-engineer' }
+            { text: 'Java & AI 工程师路线图', link: '/roadmap/java-ai-engineer' }
           ]
         }
       ],
       '/ai-news/': [
         {
-          text: '📰 2025年 (2篇)',
+          text: 'AI 资讯',
           collapsed: false,
           items: [
             { text: 'AI 资讯概览', link: '/ai-news/' },
-            { text: '2025年AI最新资讯与趋势', link: '/ai-news/2025-trends' }
-          ]
-        }
-      ],
-      '/notes/': [
-        {
-          text: '☕ Java 后端开发',
-          collapsed: false,
-          items: [
-            { text: 'Spring Boot 实战', link: '/notes/java/spring-boot' },
-            { text: '微服务架构设计', link: '/notes/java/microservices' }
-          ]
-        },
-        {
-          text: '🤖 AI & Python',
-          collapsed: false,
-          items: [
-            { text: 'Python 基础教程', link: '/notes/python/basics' },
-            { text: '机器学习入门', link: '/notes/ai/ml' }
+            { text: '2025年AI趋势', link: '/ai-news/2025-trends' }
           ]
         }
       ]

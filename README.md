@@ -9,11 +9,11 @@
 在 `docs/` 目录下创建或编辑 Markdown 文件：
 
 ```bash
-# 例如：添加一篇 Java 相关文章
-docs/notes/java/spring-boot.md
+# 例如：添加一篇新的 AI 资讯
+docs/ai-news/2025-12-updates.md
 
-# 添加一篇 AI 资讯
-docs/ai-news/2025-trends.md
+# 或添加新的学习路线
+docs/roadmap/frontend-engineer.md
 ```
 
 ### 2. 文章格式
@@ -35,18 +35,23 @@ docs/ai-news/2025-trends.md
 编辑 `docs/.vitepress/config.ts`：
 
 ```typescript
-// 添加导航栏链接
+// 导航栏配置示例
 nav: [
-  { text: '新栏目', link: '/new-section/' }
+  { text: '首页', link: '/' },
+  { text: '学习路线', link: '/roadmap/java-ai-engineer' },
+  { text: 'AI 资讯', link: '/ai-news/' },
+  { text: '关于', link: '/about' }
 ]
 
-// 添加侧边栏
+// 侧边栏配置示例（为 AI 资讯添加新文章）
 sidebar: {
-  '/new-section/': [
+  '/ai-news/': [
     {
-      text: '栏目名称',
+      text: 'AI 资讯',
       items: [
-        { text: '文章标题', link: '/new-section/article' }
+        { text: 'AI 资讯概览', link: '/ai-news/' },
+        { text: '2025年AI趋势', link: '/ai-news/2025-trends' },
+        { text: '新文章标题', link: '/ai-news/new-article' }  // 新增
       ]
     }
   ]
@@ -83,9 +88,12 @@ docs/
 │   ├── config.ts        # 站点配置
 │   └── theme/           # 自定义主题
 ├── index.md             # 首页
+├── about.md             # 关于页面
 ├── roadmap/             # 学习路线
-├── ai-news/             # AI 资讯
-└── notes/               # 技术笔记
+│   └── java-ai-engineer.md
+└── ai-news/             # AI 资讯
+    ├── index.md
+    └── 2025-trends.md
 ```
 
 ## 🎨 自定义主题
